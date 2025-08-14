@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		%sveltekit.head%
+		<style>
+		@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+			/* Use system font on Apple devices */
+		}
+		:root {
+			--xcode-bg: #282C35;
+			--xcode-sidebar: #1F2229;
+			--xcode-text: #F2F2F7;
+			--xcode-comment: #6A737D;
+			--xcode-blue: #61AFEF;
+			--xcode-purple: #C678DD;
+			--xcode-green: #98C379;
+			--xcode-red: #E06C75;
+			--xcode-yellow: #E5C07B;
+		}
+		</style>
+	</head>
+	<body class="bg-[var(--xcode-bg)] text-[var(--xcode-text)] font-sans min-h-screen selection:bg-[#3E4451] selection:text-white">
+		<div class="min-h-screen flex flex-col">%sveltekit.body%</div>
+	</body>
+</html>
