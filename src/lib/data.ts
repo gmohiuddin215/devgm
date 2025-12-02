@@ -1,7 +1,9 @@
 export const socialLinks = {
     github: 'https://github.com/gmohiuddin215',
     linkedin: 'https://linkedin.com/in/mohiuddin2398',
-    email: 'mailto:g.mohiuddin215@gmail.com'
+    email: 'mailto:g.mohiuddin215@gmail.com',
+    fiverr: 'https://www.fiverr.com/s/DBkkdrP',
+    upwork: 'https://www.upwork.com/freelancers/~016d7a9c811354e794'
 };
 
 export const experience = [

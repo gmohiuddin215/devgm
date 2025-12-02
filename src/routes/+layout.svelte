@@ -61,7 +61,7 @@
 	{@render children?.()}
 </main>
 
-<footer class="border-t border-white/10 bg-gray-900 py-12 backdrop-blur-sm">
+<footer class="border-t border-white/10 py-12 backdrop-blur-sm">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-col items-center justify-center space-y-6">
 			<p class="text-sm text-gray-500">
