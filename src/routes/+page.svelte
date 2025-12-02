@@ -4,7 +4,7 @@
 
 <!-- Hero Section -->
 <div class="group relative">
-    <section id="home" class="relative flex min-h-screen items-center overflow-hidden pb-20 pt-32">        
+    <section id="home" class="relative flex min-h-screen items-center overflow-hidden pb-20">        
         <div class="container relative z-10 mx-auto px-4">
             <div class="mx-auto max-w-6xl">
                 <div class="grid items-center gap-16 md:grid-cols-2">
@@ -207,13 +207,13 @@
 			{#each projects as project}
 				<div class="group relative">
 					<div
-						class="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-green-500 via-cyan-500 to-purple-500 opacity-0 blur transition duration-500 group-hover:opacity-50"
+						class="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 blur transition duration-500 group-hover:opacity-50"
 					></div>
 					<div
 						class="glass-panel relative flex h-full flex-col rounded-3xl p-8 transition-transform duration-500 hover:-translate-y-2"
 					>
 						<div class="mb-6 flex items-start justify-between">
-							<div class="rounded-2xl bg-purple-500 p-3 text-white group-hover:bg-white/50 group-hover:text-black transition-colors">
+							<div class="rounded-2xl bg-white/10 p-3 text-white">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									class="h-8 w-8"
@@ -229,31 +229,31 @@
 									/>
 								</svg>
 							</div>
-							<div class="rounded-full bg-purple-500 text-white px-3 py-1 font-mono text-xs group-hover:bg-white/50 group-hover:text-black transition-colors">
+							<div class="rounded-full bg-white/10 text-white px-3 py-1 font-mono text-xs">
 								iOS App
 							</div>
 						</div>
 
 						<h3
-							class="mb-3 text-2xl font-bold text-black transition-colors group-hover:text-white"
+							class="mb-3 text-2xl font-bold text-white transition-colors"
 						>
 							{project.title}
 						</h3>
 
-						<p class="mb-6 flex-1 leading-relaxed text-gray-500 group-hover:text-white/80">
+						<p class="mb-6 flex-1 leading-relaxed text-white/75">
 							{project.description}
 						</p>
 
 						<div class="mb-8 flex flex-wrap gap-2">
 							{#each project.technologies.slice(0, 3) as tech}
 								<span
-									class="rounded-full border border-purple-500/50 bg-purple-500/20 px-3 py-1 text-xs font-medium text-purple-700"
+									class="rounded-full border border-white/50 bg-white/20 px-3 py-1 text-xs font-medium text-white"
 								>
 									{tech}
 								</span>
 							{/each}
 							{#if project.technologies.length > 3}
-								<span class="rounded-full border border-purple-500/50 bg-purple-500/20 px-3 py-1 text-xs font-medium text-purple-700"
+								<span class="rounded-full border border-white/50 bg-white/20 px-3 py-1 text-xs font-medium text-white"
 									>+{project.technologies.length - 3}</span
 								>
 							{/if}
@@ -261,7 +261,7 @@
 
 						<a
 							href="/projects/{project.slug}"
-							class="glass-button flex w-full items-center justify-center gap-2 rounded-xl py-3 text-center font-medium text-white bg-purple-500 transition-all group-hover:bg-white/50 group-hover:text-black"
+							class="glass-button flex w-full items-center justify-center gap-2 rounded-xl py-3 text-center font-medium text-white bg-white/10 transition-all"
 						>
 							View Case Study
 							<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"

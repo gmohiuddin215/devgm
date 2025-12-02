@@ -15,13 +15,15 @@
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
 
+	import { User, Briefcase, FolderGit2, Mail } from 'lucide-svelte';
+
 	let { children } = $props();
 
 	const navItems = [
-		{ name: 'About', href: '#about' },
-		{ name: 'Experience', href: '#experience' },
-		{ name: 'Projects', href: '#projects' },
-		{ name: 'Contact', href: '#contact' }
+		{ name: 'About', href: '#about', icon: User },
+		// { name: 'Experience', href: '#experience', icon: Briefcase },
+		{ name: 'Projects', href: '#projects', icon: FolderGit2 },
+		{ name: 'Contact', href: '#contact', icon: Mail }
 	];
 </script>
 
@@ -46,7 +48,10 @@
 
 <nav class="glass-tabbar" in:fade={{ duration: 200, delay: 100 }}>
 	{#each navItems as item}
-		<a href={item.href} class="glass-tab group">
+		<a href={item.href} class="glass-tab group flex flex-col items-center gap-1">
+			<span class="relative z-10">
+				<item.icon size={18} />
+			</span>
 			<span class="relative z-10">{item.name}</span>
 		</a>
 	{/each}
