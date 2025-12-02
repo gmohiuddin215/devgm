@@ -4,9 +4,6 @@
 
 <!-- Hero Section -->
 <div class="group relative">
-	<div
-		class="absolute inset-0 bg-gradient-to-r from-green-500 via-cyan-500 to-purple-500"
-	></div>
     <section id="home" class="relative flex min-h-screen items-center overflow-hidden pb-20 pt-32">        
         <div class="container relative z-10 mx-auto px-4">
             <div class="mx-auto max-w-6xl">
@@ -15,8 +12,8 @@
                         <div
                             class="glass-panel mb-8 inline-flex items-center rounded-full border px-4 py-2"
                         >
-                            <span class="mr-3 h-2 w-2 animate-pulse rounded-full bg-green-900"></span>
-                            <span class="text-sm font-medium tracking-wide text-black"
+                            <span class="mr-3 h-2 w-2 animate-pulse rounded-full bg-green-500"></span>
+                            <span class="text-sm font-medium tracking-wide"
                                 >Available for new projects</span
                             >
                         </div>
@@ -26,7 +23,7 @@
                             iOS Apps
                         </h1>
 
-                        <p class="mb-10 max-w-xl text-xl font-light leading-relaxed text-black/75">
+                        <p class="mb-10 max-w-xl text-xl font-light leading-relaxed text-white/75">
                             Senior iOS Developer crafting futuristic, high-performance applications with Swift &
                             SwiftUI. Turning complex ideas into seamless, fluid realities.
                         </p>
@@ -198,14 +195,10 @@
 
 <!-- Projects Section -->
 <section id="projects" class="relative py-32">
-	<div
-		class="absolute -inset-1.5 h-full w-full bg-gradient-to-r from-green-500 via-cyan-500 to-purple-500 opacity-20 blur"
-	></div>
-
 	<div class="container relative z-10 mx-auto px-4">
 		<div class="mb-20 text-center">
 			<h2 class="mb-6 text-4xl font-bold md:text-5xl">Selected Works</h2>
-			<p class="mx-auto max-w-2xl text-black/75">
+			<p class="mx-auto max-w-2xl text-white/75">
 				A collection of projects that showcase my passion for design and engineering.
 			</p>
 		</div>

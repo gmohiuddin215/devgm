@@ -30,54 +30,27 @@
 </svelte:head>
 
 <header
-	class="fixed left-0 right-0 z-50 flex justify-center transition-all duration-300"
+	class="fixed top-0 right-0 left-0 z-50 flex justify-center pt-6 transition-all duration-300"
 	in:fade={{ duration: 200 }}
 >
-	<nav
-		class="glass-panel mx-4 flex w-full max-w-5xl items-center justify-between gap-8 rounded-full px-6 py-3"
-	>
-		<div class="flex items-center">
-			<a href="/" class="group flex items-center gap-2 text-xl font-bold tracking-tight">
-				<span
-					class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent transition-all group-hover:to-purple-500"
-				>
-					dev<span class="font-light">gm</span>
-				</span>
-			</a>
-		</div>
-
-		<div class="hidden items-center space-x-1 md:flex">
-			{#each navItems as item}
-				<a
-					href={item.href}
-					class="group relative rounded-full px-4 py-2 text-sm font-medium text-white/70 transition-all duration-300 hover:bg-white/10 hover:text-white"
-				>
-					{item.name}
-					<span
-						class="absolute bottom-1 left-1/2 h-0.5 w-0 -translate-x-1/2 rounded-full bg-purple-500 opacity-0 transition-all duration-300 group-hover:w-1/2 group-hover:opacity-100"
-					></span>
-				</a>
-			{/each}
-		</div>
-
-		<div class="md:hidden">
-			<!-- Mobile menu button -->
-			<button
-				aria-label="Toggle navigation menu"
-				class="rounded-full p-2 text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+	<div class="glass-panel mx-4 flex items-center justify-center rounded-full px-6 py-3">
+		<a href="/" class="group flex items-center gap-2 text-xl font-bold tracking-tight">
+			<span
+				class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent transition-all group-hover:to-purple-500"
 			>
-				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M4 6h16M4 12h16M4 18h16"
-					/>
-				</svg>
-			</button>
-		</div>
-	</nav>
+				dev<span class="font-light">gm</span>
+			</span>
+		</a>
+	</div>
 </header>
+
+<nav class="glass-tabbar" in:fade={{ duration: 200, delay: 100 }}>
+	{#each navItems as item}
+		<a href={item.href} class="glass-tab group">
+			<span class="relative z-10">{item.name}</span>
+		</a>
+	{/each}
+</nav>
 
 <main class="flex-1">
 	{@render children?.()}
