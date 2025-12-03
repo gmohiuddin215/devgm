@@ -297,10 +297,10 @@
 				<div
 					class="flex h-16 w-16 items-center justify-center rounded-full bg-[#1DBF73]/20 text-[#1DBF73] transition-colors group-hover:bg-[#1DBF73] group-hover:text-white"
 				>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <circle cx="256" cy="256" r="256" fill="currentColor"/>
-  <path fill="#fff" d="M353 164h-49c-12 0-22 10-22 22v28h71l-6 57h-65v148h-66V271h-49v-57h49v-28c0-44 36-80 80-80h57v58z"/>
-</svg>
+					<svg class="h-8 w-8" fill="#ffffff" viewBox="-2.5 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin">
+						<path d='M16.25 16.25v-10h-10v-.625c0-1.034.841-1.875 1.875-1.875H10V0H8.125A5.632 5.632 0 0 0 2.5 5.625v.625H0V10h2.5v6.25H0V20h8.75v-3.75h-2.5V10h6.285v6.25H10V20h8.75v-3.75h-2.5z'/>
+						<circle cx='14.375' cy='1.875' r='1.875'/>
+					</svg>
 
 				</div>
 				<div>
@@ -316,15 +316,13 @@
 				rel="noopener noreferrer"
 				class="glass-panel group relative flex flex-col items-center justify-center gap-4 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10"
 			>
-				<div
-					class="flex h-16 w-16 items-center justify-center rounded-full bg-[#14A800]/20 text-[#14A800] transition-colors group-hover:bg-[#14A800] group-hover:text-white"
+							<div
+					class="flex h-16 w-16 items-center justify-center rounded-full bg-[#000000]/20 text-[#000000] transition-colors group-hover:bg-[#000000] group-hover:text-white"
 				>
-					<svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-						<path
-							d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-.437c.385-.735.804-1.543 1.215-2.455.538-1.192.935-2.261 1.182-3.178.496-1.843.088-3.298-1.116-3.991-1.205-.693-2.913-.464-4.223.567l-.608.477-.28-.753H8.314v6.662c0 .902-.132 1.668-.393 2.277-.385.897-1.056 1.55-1.998 1.942-.516.215-1.089.324-1.703.324h-.396v3.62h.437c1.703 0 3.178-.425 4.385-1.264.966-.671 1.703-1.583 2.19-2.71.264-.611.455-1.288.567-2.012.382.723.82 1.483 1.304 2.258l.496.794c.044.07.091.141.138.211-.905 1.48-1.221 2.966-.938 4.417.286 1.465 1.264 2.503 2.678 2.848 1.414.345 2.913-.193 4.108-1.477 1.195-1.284 1.635-2.992 1.208-4.688-.428-1.696-1.937-2.955-3.835-3.206zm-10.247-1.328c.314-.732.472-1.612.472-2.617V5.576c.726-.452 1.543-.549 2.148-.255.605.295.889 1.053.699 1.867-.179.761-.532 1.72-1.05 2.822-.452.963-.922 1.826-1.396 2.564l-.873-1.416z"
-						/>
-					</svg>
-				</div>
+				<svg class="h-8 w-8" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+					<path d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"/>
+				</svg>
+							</div>
 				<div>
 					<h3 class="mb-1 text-xl font-bold text-white">Upwork</h3>
 					<p class="text-sm text-white/60">Professional Contracts</p>
