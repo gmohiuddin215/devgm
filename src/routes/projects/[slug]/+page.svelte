@@ -74,12 +74,17 @@
 				<!-- Screen Content -->
 				<div class="relative z-10 aspect-[9/19.5] overflow-hidden rounded-[3rem] bg-gray-900">
 					<div
-						class="scrollbar-hide flex h-full snap-x snap-mandatory overflow-x-auto"
+						class="scrollbar-hide flex h-full touch-pan-x snap-x snap-mandatory overflow-x-auto"
 						style="scroll-behavior: smooth;"
 					>
 						{#each project.screenshots as screenshot}
 							<div class="relative h-full w-full flex-shrink-0 snap-center">
-								<img src={screenshot} alt="App Screenshot" class="h-full w-full object-cover" />
+								<img
+									src={screenshot}
+									alt="App Screenshot"
+									class="h-full w-full object-cover"
+									draggable="false"
+								/>
 							</div>
 						{/each}
 					</div>

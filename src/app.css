@@ -52,6 +52,15 @@
     .liquid-bg {
         background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #050510 100%);
     }
+
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 body {
