@@ -5,7 +5,7 @@
 
 <!-- Hero Section -->
 <div class="group relative">
-	<section id="home" class="relative flex min-h-screen items-center overflow-hidden pb-20">
+	<section id="home" class="relative flex min-h-screen items-center overflow-hidden pb-20 pt-12 lg:pt-2">
 		<div class="relative z-10 container mx-auto px-4">
 			<div class="mx-auto max-w-6xl">
 				<div class="grid items-center gap-16 md:grid-cols-2">
