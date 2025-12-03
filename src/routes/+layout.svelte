@@ -14,6 +14,7 @@
 	});
 
 	import { User, FolderGit2, Mail, UserStar } from 'lucide-svelte';
+	import { page } from '$app/stores';
 
 	let { children } = $props();
 
@@ -30,17 +31,39 @@
 </svelte:head>
 
 <header
-	class="fixed top-0 right-0 left-0 z-50 flex justify-center pt-6 transition-all duration-300"
+	class="fixed top-0 right-0 left-0 z-50 pt-6 transition-all duration-300"
 	in:fade={{ duration: 200 }}
 >
-	<div class="glass-panel mx-4 flex items-center justify-center rounded-full px-6 py-3">
-		<a href="/" class="group flex items-center gap-2 text-xl font-bold tracking-tight">
-			<span
-				class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent transition-all group-hover:to-purple-500"
+	<div class="relative container mx-auto flex max-w-5xl items-center justify-center px-4">
+		{#if $page.url.pathname !== '/'}
+			<a
+				href="/"
+				class="glass-panel absolute left-4 flex h-12 w-12 items-center justify-center rounded-full text-white/70 transition-colors hover:text-white"
 			>
-				dev<span class="font-light">gm</span>
-			</span>
-		</a>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="h-5 w-5 transition-transform group-hover:-translate-x-1"
+					viewBox="0 0 20 20"
+					fill="currentColor"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+						clip-rule="evenodd"
+					/>
+				</svg>
+			</a>
+		{/if}
+
+		<div class="glass-panel mx-4 flex items-center justify-center rounded-full px-6 py-3">
+			<a href="/" class="group flex items-center gap-2 text-xl font-bold tracking-tight">
+				<span
+					class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent transition-all group-hover:to-purple-500"
+				>
+					dev<span class="font-light">gm</span>
+				</span>
+			</a>
+		</div>
 	</div>
 </header>
 
