@@ -37,7 +37,7 @@ I migrated large parts of the UI to SwiftUI, restructured the architecture follo
 significantly improved rendering performance. 
 I also implemented new features such as AI-powered text understanding using OpenAI, real-time updates, and smoother 
 navigation flows. The result was an app that performed faster, was easier to maintain, and offered a much more intuitive user experience.`,
-        technologies: ['SwiftUI', 'UIKit Migration', 'OpenAI API', 'Performance Optimization', 'MVVM'],
+        technologies: ['SwiftUI', 'UIKit', 'OpenAI', 'Memory Management', 'MVVM'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Leaf+Home',
             'https://placehold.co/1170x2532/orange/white?text=Leaf+Calendar',
@@ -56,7 +56,7 @@ I integrated In-App Purchases, added WidgetKit support, SiriKit voice commands, 
 implemented a Timeline interface with animations. 
 I also built the backend and implemented OpenAI-driven natural language task creation. 
 The project focused heavily on user experience, speed, and reliability.`,
-        technologies: ['SwiftUI', 'OpenAI API', 'In-App Purchases', 'WidgetKit', 'SiriKit', 'Backend', 'Action Button'],
+        technologies: ['SwiftUI', 'OpenAI', 'In-App Purchases', 'WidgetKit', 'SiriKit', 'Action Button'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Home',
             'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+List',
@@ -93,7 +93,7 @@ The experience required deep understanding of motion APIs, background modes, and
 I integrated SceneKit and RealityKit to display models interactively and added a custom workflow for marking damaged 
 areas on walls and ceilings. 
 These areas were visualized in both 2D and 3D models, helping users identify and document structural issues.`,
-        technologies: ['RoomPlan API', 'SceneKit', 'RealityKit', '3D Visualization'],
+        technologies: ['SwiftUI', 'RoomPlan', 'SceneKit', 'RealityKit'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Multiroom+Scan',
             'https://placehold.co/1170x2532/orange/white?text=Multiroom+Model',
@@ -110,7 +110,7 @@ These areas were visualized in both 2D and 3D models, helping users identify and
         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
 I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
 The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
-        technologies: ['USDZ', '3D Scanning', 'RealityKit', 'PHP Backend', 'Uploads'],
+        technologies: ['SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
             'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
