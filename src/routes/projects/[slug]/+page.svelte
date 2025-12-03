@@ -7,7 +7,7 @@
 	<title>{project.title} | Case Study</title>
 </svelte:head>
 
-<div class="min-h-screen pb-20 pt-32">
+<div class="min-h-screen pt-32 pb-20">
 	<div class="container mx-auto max-w-5xl px-4">
 		<a
 			href="/#projects"
@@ -30,28 +30,74 @@
 
 		<header class="relative mb-16">
 			<div
-				class="absolute -left-20 -top-20 -z-10 h-64 w-64 rounded-full bg-purple-500/20 blur-[80px]"
+				class="absolute -top-20 -left-20 -z-10 h-64 w-64 rounded-full bg-purple-500/20 blur-[80px]"
 			></div>
-			<h1 class="mb-8 text-5xl font-bold leading-tight text-white md:text-7xl">{project.title}</h1>
-			<p class="max-w-3xl text-2xl font-light leading-relaxed text-white/75">
+			<h1 class="mb-8 text-5xl leading-tight font-bold text-white md:text-7xl">{project.title}</h1>
+			<p class="max-w-3xl text-2xl leading-relaxed font-light text-white/75">
 				{project.description}
 			</p>
 		</header>
 
 		<div class="mb-20 grid gap-8 md:grid-cols-3">
 			<div class="glass-panel rounded-3xl border border-cyan-500/1 bg-cyan-500/10 p-8">
-				<h3 class="mb-4 text-xs font-bold uppercase tracking-widest text-white">Role</h3>
+				<h3 class="mb-4 text-xs font-bold tracking-widest text-white uppercase">Role</h3>
 				<p class="text-lg font-medium text-white">Senior iOS Developer</p>
 			</div>
-			<div class="glass-panel rounded-3xl border border-cyan-500/10 bg-cyan-500/10 p-8 md:col-span-2">
-				<h3 class="mb-6 text-xs font-bold uppercase tracking-widest text-white">Technologies</h3>
+			<div
+				class="glass-panel rounded-3xl border border-cyan-500/10 bg-cyan-500/10 p-8 md:col-span-2"
+			>
+				<h3 class="mb-6 text-xs font-bold tracking-widest text-white uppercase">Technologies</h3>
 				<div class="flex flex-wrap gap-3">
 					{#each project.technologies as tech}
-						<span class="glass-button rounded-full text-sm text-white px-4 py-2">
+						<span class="glass-button rounded-full px-4 py-2 text-sm text-white">
 							{tech}
 						</span>
 					{/each}
 				</div>
+			</div>
+		</div>
+
+		<!-- App Preview Section -->
+		<div class="mb-20">
+			<h2 class="mb-12 text-center text-3xl font-bold text-white">App Preview</h2>
+			<div class="relative mx-auto max-w-[300px]">
+				<!-- iPhone Frame -->
+				<div
+					class="pointer-events-none absolute inset-0 z-20 rounded-[3rem] border-8 border-gray-900 shadow shadow-white"
+				>
+					<!-- Notch -->
+					<div
+						class="absolute top-0 left-1/2 h-6 w-32 -translate-x-1/2 rounded-b-xl bg-gray-900"
+					></div>
+				</div>
+
+				<!-- Screen Content -->
+				<div class="relative z-10 aspect-[9/19.5] overflow-hidden rounded-[3rem] bg-gray-900">
+					<div
+						class="scrollbar-hide flex h-full snap-x snap-mandatory overflow-x-auto"
+						style="scroll-behavior: smooth;"
+					>
+						{#each project.screenshots as screenshot}
+							<div class="relative h-full w-full flex-shrink-0 snap-center">
+								<img src={screenshot} alt="App Screenshot" class="h-full w-full object-cover" />
+							</div>
+						{/each}
+					</div>
+
+					<!-- Swipe Indicator -->
+					<div
+						class="pointer-events-none absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1 rounded-full bg-black/50 px-2 py-1 backdrop-blur-md"
+					>
+						{#each project.screenshots as _, i}
+							<div class="h-1.5 w-1.5 rounded-full bg-white/50"></div>
+						{/each}
+					</div>
+				</div>
+
+				<!-- Reflection/Glass Effect -->
+				<div
+					class="pointer-events-none absolute inset-0 z-30 rounded-[3rem] bg-gradient-to-tr from-white/10 to-transparent opacity-50"
+				></div>
 			</div>
 		</div>
 
@@ -62,7 +108,7 @@
 					></span>
 					Overview
 				</h2>
-				<div class="prose prose-invert max-w-none text-lg leading-relaxed text-white/75">
+				<div class="prose max-w-none text-lg leading-relaxed text-white/75 prose-invert">
 					<p>{project.detailedDescription}</p>
 				</div>
 			</section>

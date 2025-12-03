@@ -1,8 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { socialLinks } from '$lib/data';
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 
 	let scrolled = $state(false);

@@ -38,6 +38,12 @@ significantly improved rendering performance.
 I also implemented new features such as AI-powered text understanding using OpenAI, real-time updates, and smoother 
 navigation flows. The result was an app that performed faster, was easier to maintain, and offered a much more intuitive user experience.`,
         technologies: ['SwiftUI', 'UIKit Migration', 'OpenAI API', 'Performance Optimization', 'MVVM'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Leaf+Home',
+            'https://placehold.co/1170x2532/orange/white?text=Leaf+Calendar',
+            'https://placehold.co/1170x2532/orange/white?text=Leaf+Events',
+            'https://placehold.co/1170x2532/orange/white?text=Leaf+Settings'
+        ],
         github: '#',
         demo: '#'
     },
@@ -51,6 +57,12 @@ implemented a Timeline interface with animations.
 I also built the backend and implemented OpenAI-driven natural language task creation. 
 The project focused heavily on user experience, speed, and reliability.`,
         technologies: ['SwiftUI', 'OpenAI API', 'In-App Purchases', 'WidgetKit', 'SiriKit', 'Backend', 'Action Button'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Home',
+            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+List',
+            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+AI',
+            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Settings'
+        ],
         github: '#',
         demo: '#'
     },
@@ -64,6 +76,12 @@ movement patterns and sends alerts.
 I designed a background activity monitoring flow, integrated APNs for safety notifications, and improved battery usage. 
 The experience required deep understanding of motion APIs, background modes, and performance constraints.`,
         technologies: ['CoreMotion', 'CMMotionActivityManager', 'Push Notifications', 'Background Modes', 'iOS Architecture'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Home',
+            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Map',
+            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Alerts',
+            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Settings'
+        ],
         github: '#',
         demo: '#'
     },
@@ -76,6 +94,12 @@ I integrated SceneKit and RealityKit to display models interactively and added a
 areas on walls and ceilings. 
 These areas were visualized in both 2D and 3D models, helping users identify and document structural issues.`,
         technologies: ['RoomPlan API', 'SceneKit', 'RealityKit', '3D Visualization'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Scan',
+            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Model',
+            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Edit',
+            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Export'
+        ],
         github: '#',
         demo: '#'
     },
@@ -87,6 +111,12 @@ These areas were visualized in both 2D and 3D models, helping users identify and
 I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
 The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
         technologies: ['USDZ', '3D Scanning', 'RealityKit', 'PHP Backend', 'Uploads'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
+            'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
+            'https://placehold.co/1170x2532/orange/white?text=Viflux+Gallery',
+            'https://placehold.co/1170x2532/orange/white?text=Viflux+Profile'
+        ],
         github: '#',
         demo: '#'
     },
@@ -99,6 +129,12 @@ I developed the entire iOS app, designed the UI in SwiftUI, handled model upload
 and optimized images for performance. 
 The app focused on delivering fast generation times, beautiful design, and user-friendly controls.`,
         technologies: ['SwiftUI', 'Stable Diffusion', 'Backend APIs', 'AI Image Generation'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Mimic+Generate',
+            'https://placehold.co/1170x2532/orange/white?text=Mimic+Gallery',
+            'https://placehold.co/1170x2532/orange/white?text=Mimic+Edit',
+            'https://placehold.co/1170x2532/orange/white?text=Mimic+Share'
+        ],
         github: '#',
         demo: '#'
     },
@@ -111,6 +147,12 @@ checklists, emails, and reminders.
 I implemented user authentication, cloud syncing, email integrations, multi-list views, and real-time updates. 
 The app had a major focus on clean UX and multi-platform consistency.`,
         technologies: ['SwiftUI', 'Kotlin', 'Supabase', 'Authentication', 'Cloud Sync', 'Email Integration'],
+        screenshots: [
+            'https://placehold.co/1170x2532/orange/white?text=Wedding+Dashboard',
+            'https://placehold.co/1170x2532/orange/white?text=Wedding+Guests',
+            'https://placehold.co/1170x2532/orange/white?text=Wedding+Budget',
+            'https://placehold.co/1170x2532/orange/white?text=Wedding+Checklist'
+        ],
         github: '#',
         demo: '#'
     }
