@@ -1,6 +1,7 @@
 <script>
 	export let data;
 	const { project } = data;
+	let currentScreenshotIndex = 0;
 </script>
 
 <svelte:head>
@@ -76,6 +77,12 @@
 					<div
 						class="scrollbar-hide flex h-full touch-pan-x snap-x snap-mandatory overflow-x-auto"
 						style="scroll-behavior: smooth;"
+						on:scroll={(e) => {
+							const target = e.currentTarget;
+							const scrollLeft = target.scrollLeft;
+							const width = target.clientWidth;
+							currentScreenshotIndex = Math.round(scrollLeft / width);
+						}}
 					>
 						{#each project.screenshots as screenshot}
 							<div class="relative h-full w-full flex-shrink-0 snap-center">
@@ -94,7 +101,12 @@
 						class="pointer-events-none absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1 rounded-full bg-black/50 px-2 py-1 backdrop-blur-md"
 					>
 						{#each project.screenshots as _, i}
-							<div class="h-1.5 w-1.5 rounded-full bg-white/50"></div>
+							<div
+								class="h-1.5 w-1.5 rounded-full transition-all duration-300 {i ===
+								currentScreenshotIndex
+									? 'scale-125 bg-white'
+									: 'bg-white/50'}"
+							></div>
 						{/each}
 					</div>
 				</div>
