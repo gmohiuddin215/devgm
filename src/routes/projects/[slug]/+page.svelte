@@ -48,11 +48,7 @@
 				<!-- Overview -->
 				<div class="space-y-16">
 					<section class="glass-panel rounded-3xl border border-white/5 p-8">
-						<h2 class="mb-8 flex items-center text-3xl font-bold text-white">
-							<span class="mr-4 h-8 w-2 rounded-full bg-gradient-to-b from-cyan-400 to-purple-500"
-							></span>
-							Overview
-						</h2>
+						<h2 class="mb-8 text-2xl font-bold text-white">Overview</h2>
 						<div class="prose max-w-none text-lg leading-relaxed text-white/75 prose-invert">
 							<p>{project.detailedDescription}</p>
 						</div>
@@ -69,7 +65,7 @@
 					>
 						<!-- Notch -->
 						<div
-							class="absolute top-0 left-1/2 h-6 w-32 -translate-x-1/2 rounded-b-xl bg-gray-900"
+							class="absolute top-2 left-1/2 h-6 w-20 -translate-x-1/2 rounded-xl bg-gray-900"
 						></div>
 					</div>
 
