@@ -15,13 +15,13 @@
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
 
-	import { User, Briefcase, FolderGit2, Mail } from 'lucide-svelte';
+	import { User, FolderGit2, Mail, UserStar } from 'lucide-svelte';
 
 	let { children } = $props();
 
 	const navItems = [
 		{ name: 'About', href: '#about', icon: User },
-		// { name: 'Experience', href: '#experience', icon: Briefcase },
+		{ name: 'Reviews', href: '#reviews', icon: UserStar },
 		{ name: 'Projects', href: '#projects', icon: FolderGit2 },
 		{ name: 'Contact', href: '#contact', icon: Mail }
 	];

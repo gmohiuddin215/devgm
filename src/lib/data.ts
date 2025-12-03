@@ -115,3 +115,34 @@ The app had a major focus on clean UX and multi-platform consistency.`,
         demo: '#'
     }
 ];
+
+export const reviews = [
+    {
+        name: 'Henriette Novak',
+        role: 'Founder',
+        company: 'AI Smart Reminder',
+        image: 'https://randomuser.me/api/portraits/women/44.jpg',
+        text: 'Mohiuddin truly impressed with his exceptional professionalism and coding expertise, ensuring a bug-free experience. His deep understanding and puntual delivery made working with him a breeze, and his fluent communication was the icing on the cake. 👏'
+    },
+    {
+        name: 'David Chen',
+        role: 'CTO',
+        company: 'StartUp Vision',
+        image: 'https://randomuser.me/api/portraits/men/32.jpg',
+        text: 'Working with Ghulam was a pleasure. He delivered the AI Smart Reminder app ahead of schedule and the code quality was top-notch. He truly understands how to build scalable iOS architectures.'
+    },
+    {
+        name: 'Sebastian',
+        role: 'Founder',
+        company: 'Viflux.com',
+        image: 'https://randomuser.me/api/portraits/men/68.jpg',
+        text: 'This was my first experience working with iOS developer, and it turned out to be very positive. He was able to effectively solve the issues and bugs that came up throughout the project. He was always available and willing to fix the things quickly. I would recommend him.'
+    },
+    {
+        name: 'Paul Greaves',
+        role: 'Founder',
+        company: 'Fixzy',
+        image: 'https://randomuser.me/api/portraits/men/78.jpg',
+        text: 'Mohiuddin is a true professional. He delivered the app on time and with high quality. He is a great communicator and always available to help. I would recommend him.'
+    }
+];

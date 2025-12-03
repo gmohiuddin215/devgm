@@ -1,5 +1,6 @@
 <script>
-	import { experience, projects, skills, socialLinks } from '$lib/data';
+	import { projects, skills, socialLinks, reviews } from '$lib/data';
+	import profile from '$lib/assets/profile.jpg';
 </script>
 
 <!-- Hero Section -->
@@ -151,7 +152,7 @@
 					></div>
 					<div class="glass-panel relative overflow-hidden rounded-2xl p-2">
 						<img
-							src="https://via.placeholder.com/600x600/1a1a2e/ffffff?text=GM"
+							src={profile}
 							alt="Profile"
 							class="h-auto w-full transform rounded-xl transition duration-700 group-hover:scale-105"
 						/>
@@ -159,13 +160,11 @@
 				</div>
 			</div>
 			<div class="md:w-1/2">
-				<h2 class="mb-8 flex items-center gap-4 text-5xl font-bold">
-					About Me
-				</h2>
+				<h2 class="mb-8 flex items-center gap-4 text-5xl font-bold">About Me</h2>
 				<p class="mb-6 text-lg leading-relaxed">
-					Hello! I'm Ghulam, a passionate iOS developer with over 4 years of experience in creating
-					beautiful and functional applications. I specialize in Swift, SwiftUI, and modern iOS
-					frameworks.
+					Hello! I'm Ghulam Mohiuddin, a passionate iOS developer with over 4 years of experience in
+					creating beautiful and functional applications. I specialize in Swift, SwiftUI, and modern
+					iOS frameworks.
 				</p>
 				<p class="mb-8 text-lg leading-relaxed">
 					I have extensive experience with advanced technologies like SceneKit, RealityKit, and
@@ -275,6 +274,45 @@
 	</div>
 </section>
 
+<!-- Reviews Section -->
+<section id="reviews" class="relative py-32">
+	<div class="relative z-10 container mx-auto px-4">
+		<div class="mb-20 text-center">
+			<h2 class="mb-6 text-4xl font-bold md:text-5xl">Client Reviews</h2>
+			<p class="mx-auto max-w-2xl text-white/75">What people are saying about my work.</p>
+		</div>
+
+		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+			{#each reviews as review}
+				<div class="group relative">
+					<div
+						class="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-pink-500 to-rose-500 opacity-0 blur transition duration-500 group-hover:opacity-50"
+					></div>
+					<div
+						class="glass-panel relative flex h-full flex-col rounded-3xl p-8 transition-transform duration-500 hover:-translate-y-2"
+					>
+						<div class="mb-6 flex items-center gap-4">
+							<img
+								src={review.image}
+								alt={review.name}
+								class="h-12 w-12 rounded-full border-2 border-white/10"
+							/>
+							<div>
+								<h3 class="font-bold text-white">{review.name}</h3>
+								<p class="text-xs text-white/60">{review.role} at {review.company}</p>
+							</div>
+						</div>
+
+						<p class="leading-relaxed text-white/75 italic">
+							"{review.text}"
+						</p>
+					</div>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
 <!-- Contact Section -->
 <section id="contact" class="relative py-32">
 	<div class="relative z-10 container mx-auto px-4">
@@ -297,11 +335,18 @@
 				<div
 					class="flex h-16 w-16 items-center justify-center rounded-full bg-[#1DBF73]/20 text-[#1DBF73] transition-colors group-hover:bg-[#1DBF73] group-hover:text-white"
 				>
-					<svg class="h-8 w-8" fill="#ffffff" viewBox="-2.5 -2 24 24" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin">
-						<path d='M16.25 16.25v-10h-10v-.625c0-1.034.841-1.875 1.875-1.875H10V0H8.125A5.632 5.632 0 0 0 2.5 5.625v.625H0V10h2.5v6.25H0V20h8.75v-3.75h-2.5V10h6.285v6.25H10V20h8.75v-3.75h-2.5z'/>
-						<circle cx='14.375' cy='1.875' r='1.875'/>
+					<svg
+						class="h-8 w-8"
+						fill="#ffffff"
+						viewBox="-2.5 -2 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+						preserveAspectRatio="xMinYMin"
+					>
+						<path
+							d="M16.25 16.25v-10h-10v-.625c0-1.034.841-1.875 1.875-1.875H10V0H8.125A5.632 5.632 0 0 0 2.5 5.625v.625H0V10h2.5v6.25H0V20h8.75v-3.75h-2.5V10h6.285v6.25H10V20h8.75v-3.75h-2.5z"
+						/>
+						<circle cx="14.375" cy="1.875" r="1.875" />
 					</svg>
-
 				</div>
 				<div>
 					<h3 class="mb-1 text-xl font-bold text-white">Fiverr</h3>
@@ -316,13 +361,20 @@
 				rel="noopener noreferrer"
 				class="glass-panel group relative flex flex-col items-center justify-center gap-4 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10"
 			>
-							<div
+				<div
 					class="flex h-16 w-16 items-center justify-center rounded-full bg-[#000000]/20 text-[#000000] transition-colors group-hover:bg-[#000000] group-hover:text-white"
 				>
-				<svg class="h-8 w-8" fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-					<path d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"/>
-				</svg>
-							</div>
+					<svg
+						class="h-8 w-8"
+						fill="#ffffff"
+						viewBox="0 0 32 32"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z"
+						/>
+					</svg>
+				</div>
 				<div>
 					<h3 class="mb-1 text-xl font-bold text-white">Upwork</h3>
 					<p class="text-sm text-white/60">Professional Contracts</p>
