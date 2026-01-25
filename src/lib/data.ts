@@ -21,9 +21,12 @@ export const skills = [
     { name: 'Combine', level: 'Expert' },
     { name: 'SceneKit & RealityKit', level: 'Expert' },
     { name: 'SiriKit & WidgetKit', level: 'Expert' },
+    { name: 'SwiftData', level: 'Expert' },
+    { name: 'MVVM & VIPER Architecture', level: 'Expert' },
+    { name: 'PDFKit', level: 'Expert' },
     { name: 'In-App Purchases', level: 'Expert' },
     { name: 'Backend & REST APIs', level: 'Expert' },
-    { name: 'ChatGPT API', level: 'Expert' },
+    { name: 'AI Integration', level: 'Expert' },
     { name: 'Action Button', level: 'Expert' }
 ];
 
@@ -37,7 +40,7 @@ I designed and developed the entire iOS app using SwiftUI, implementing features
 PDF generation and export, multi-currency support, client management, and customizable invoice templates. 
 The app features a clean, intuitive interface that makes billing effortless, with support for recurring invoices, 
 payment tracking, and detailed financial reports. Built with a focus on user experience, reliability, and professional presentation.`,
-        technologies: ['SwiftUI', 'PDF Generation', 'Core Data', 'CloudKit', 'In-App Purchases'],
+        technologies: ['Swift', 'SwiftUI', 'PDFKit', 'SwiftData', 'VIPER', 'In-App Purchases', 'Adapty'],
         screenshots: [
             'https://placehold.co/1170x2532/teal/white?text=Invoza+Home',
             'https://placehold.co/1170x2532/teal/white?text=Invoza+Invoice',
@@ -57,7 +60,7 @@ I migrated large parts of the UI to SwiftUI, restructured the architecture follo
 significantly improved rendering performance. 
 I also implemented new features such as AI-powered text understanding using OpenAI, real-time updates, and smoother 
 navigation flows. The result was an app that performed faster, was easier to maintain, and offered a much more intuitive user experience.`,
-        technologies: ['SwiftUI', 'UIKit', 'OpenAI', 'Memory Management', 'MVVM'],
+        technologies: ['Swift', 'SwiftUI', 'UIKit', 'OpenAI', 'MVVM', 'Parse', 'Firebase', 'SPM'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Leaf+Home',
             'https://placehold.co/1170x2532/orange/white?text=Leaf+Calendar',
@@ -77,7 +80,7 @@ I integrated In-App Purchases, added WidgetKit support, SiriKit voice commands, 
 implemented a Timeline interface with animations. 
 I also built the backend and implemented OpenAI-driven natural language task creation. 
 The project focused heavily on user experience, speed, and reliability.`,
-        technologies: ['SwiftUI', 'OpenAI', 'In-App Purchases', 'WidgetKit', 'SiriKit', 'Action Button'],
+        technologies: ['Swift', 'SwiftUI', 'OpenAI', 'In-App Purchases', 'WidgetKit', 'SiriKit', 'Action Button'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Home',
             'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+List',
@@ -97,7 +100,7 @@ Using Core Motion and CMMotionActivityManager, I built a real-time motion tracki
 movement patterns and sends alerts. 
 I designed a background activity monitoring flow, integrated APNs for safety notifications, and improved battery usage. 
 The experience required deep understanding of motion APIs, background modes, and performance constraints.`,
-        technologies: ['CoreMotion', 'CMMotionActivityManager', 'Push Notifications', 'Background Modes', 'iOS Architecture'],
+        technologies: ['Swift', 'UIKit', 'CoreMotion', 'CoreLocation', 'Push Notifications', 'Background Modes', 'MVVM'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Home',
             'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Map',
@@ -116,7 +119,7 @@ The experience required deep understanding of motion APIs, background modes, and
 I integrated SceneKit and RealityKit to display models interactively and added a custom workflow for marking damaged 
 areas on walls and ceilings. 
 These areas were visualized in both 2D and 3D models, helping users identify and document structural issues.`,
-        technologies: ['SwiftUI', 'RoomPlan', 'SceneKit', 'RealityKit'],
+        technologies: ['Swift', 'SwiftUI', 'RoomPlan', 'SceneKit', 'RealityKit', 'ARKit', 'MVVM'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Multiroom+Scan',
             'https://placehold.co/1170x2532/orange/white?text=Multiroom+Model',
@@ -133,7 +136,7 @@ These areas were visualized in both 2D and 3D models, helping users identify and
         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
 I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
 The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
-        technologies: ['SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
+        technologies: ['Swift', 'SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
             'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
@@ -151,7 +154,7 @@ The app focused on accuracy, simplicity, and reliability for users needing quick
 I developed the entire iOS app, designed the UI in SwiftUI, handled model uploads, managed AI prompts, 
 and optimized images for performance. 
 The app focused on delivering fast generation times, beautiful design, and user-friendly controls.`,
-        technologies: ['SwiftUI', 'Stable Diffusion', 'Backend APIs', 'AI Image Generation'],
+        technologies: ['Swift', 'SwiftUI', 'Stable Diffusion', 'Firebase', 'RunPod'],
         screenshots: [
             'https://placehold.co/1170x2532/orange/white?text=Mimic+Generate',
             'https://placehold.co/1170x2532/orange/white?text=Mimic+Gallery',
