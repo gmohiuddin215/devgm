@@ -2,6 +2,20 @@
 	export let data;
 	const { project } = data;
 	let currentScreenshotIndex = 0;
+
+	// Dynamically import images from assets folder
+	const imageModules = import.meta.glob('$lib/assets/**/*.PNG', { eager: true });
+	
+	function getImageUrl(screenshotPath) {
+		// Check if it's a full URL (placeholder or external)
+		if (screenshotPath.startsWith('http')) {
+			return screenshotPath;
+		}
+		// Build the full import path
+		const fullPath = `/src/lib/assets/${screenshotPath}`;
+		const module = imageModules[fullPath];
+		return module ? module.default : screenshotPath;
+	}
 </script>
 
 <svelte:head>
@@ -83,58 +97,24 @@
 				</div>
 			</div>
 
-			<!-- Right Column: App Preview (Hidden for now) -->
-			<!-- 
-			<div>
-				<div class="relative mx-auto max-w-[300px]">
-					<div
-						class="pointer-events-none absolute inset-0 z-20 rounded-[3rem] border-8 border-gray-900 shadow shadow-white"
-					>
-						<div
-							class="absolute top-2 left-1/2 h-6 w-20 -translate-x-1/2 rounded-xl bg-gray-900"
-						></div>
+			<!-- Screenshots Gallery -->
+			{#if project.screenshots && project.screenshots.length > 0 && !project.screenshots[0].startsWith('http')}
+				<section class="mt-16">
+					<h2 class="mb-8 text-2xl font-bold text-white">App Screenshots</h2>
+					<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+						{#each project.screenshots as screenshot, i}
+							<div class="group relative overflow-hidden rounded-2xl bg-gray-800/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20">
+								<img
+									src={getImageUrl(screenshot)}
+									alt="App Screenshot {i + 1}"
+									class="h-auto w-full object-contain"
+									loading="lazy"
+								/>
+							</div>
+						{/each}
 					</div>
-					<div class="relative z-10 aspect-[9/19.5] overflow-hidden rounded-[3rem] bg-gray-900">
-						<div
-							class="scrollbar-hide flex h-full touch-pan-x snap-x snap-mandatory overflow-x-auto"
-							style="scroll-behavior: smooth;"
-							on:scroll={(e) => {
-								const target = e.currentTarget;
-								const scrollLeft = target.scrollLeft;
-								const width = target.clientWidth;
-								currentScreenshotIndex = Math.round(scrollLeft / width);
-							}}
-						>
-							{#each project.screenshots as screenshot}
-								<div class="relative h-full w-full flex-shrink-0 snap-center">
-									<img
-										src={screenshot}
-										alt="App Screenshot"
-										class="h-full w-full object-cover"
-										draggable="false"
-									/>
-								</div>
-							{/each}
-						</div>
-						<div
-							class="pointer-events-none absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-1 rounded-full bg-black/50 px-2 py-1 backdrop-blur-md"
-						>
-							{#each project.screenshots as _, i}
-								<div
-									class="h-1.5 w-1.5 rounded-full transition-all duration-300 {i ===
-									currentScreenshotIndex
-										? 'scale-125 bg-white'
-										: 'bg-white/50'}"
-								></div>
-							{/each}
-						</div>
-					</div>
-					<div
-						class="pointer-events-none absolute inset-0 z-30 rounded-[3rem] bg-gradient-to-tr from-white/10 to-transparent opacity-50"
-					></div>
-				</div>
-			</div>
-			-->
+				</section>
+			{/if}
 		</div>
 	</div>
 </div>

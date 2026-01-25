@@ -33,7 +33,7 @@ export const skills = [
 export const projects = [
     {
         slug: 'invoza',
-        title: 'Invoza – Invoice Maker',
+        title: 'Invoza',
         description: 'A professional invoicing and estimates app with beautiful UI, PDF export, and multi-currency support.',
         detailedDescription: `Invoza is a comprehensive invoicing app built for freelancers and small businesses. 
 I designed and developed the entire iOS app using SwiftUI, implementing features such as invoice and estimate creation, 
@@ -42,10 +42,10 @@ The app features a clean, intuitive interface that makes billing effortless, wit
 payment tracking, and detailed financial reports. Built with a focus on user experience, reliability, and professional presentation.`,
         technologies: ['Swift', 'SwiftUI', 'PDFKit', 'SwiftData', 'VIPER', 'In-App Purchases', 'Adapty'],
         screenshots: [
-            'https://placehold.co/1170x2532/teal/white?text=Invoza+Home',
-            'https://placehold.co/1170x2532/teal/white?text=Invoza+Invoice',
-            'https://placehold.co/1170x2532/teal/white?text=Invoza+Clients',
-            'https://placehold.co/1170x2532/teal/white?text=Invoza+Reports'
+            'invoza/img_1.PNG',
+            'invoza/img_2.PNG',
+            'invoza/img_3.PNG',
+            'invoza/img_4.PNG'
         ],
         appStoreUrl: 'https://apps.apple.com/us/app/invoza-invoice-maker/id6756181651',
         github: '#',
@@ -62,10 +62,11 @@ I also implemented new features such as AI-powered text understanding using Open
 navigation flows. The result was an app that performed faster, was easier to maintain, and offered a much more intuitive user experience.`,
         technologies: ['Swift', 'SwiftUI', 'UIKit', 'OpenAI', 'MVVM', 'Parse', 'Firebase', 'SPM'],
         screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Leaf+Home',
-            'https://placehold.co/1170x2532/orange/white?text=Leaf+Calendar',
-            'https://placehold.co/1170x2532/orange/white?text=Leaf+Events',
-            'https://placehold.co/1170x2532/orange/white?text=Leaf+Settings'
+            'leaf/img_1.PNG',
+            'leaf/img_2.PNG',
+            'leaf/img_3.PNG',
+            'leaf/img_4.PNG',
+            'leaf/img_5.PNG'
         ],
         appStoreUrl: 'https://apps.apple.com/us/app/leaf-build-your-community/id1040588046',
         github: '#',
@@ -82,38 +83,21 @@ I also built the backend and implemented OpenAI-driven natural language task cre
 The project focused heavily on user experience, speed, and reliability.`,
         technologies: ['Swift', 'SwiftUI', 'OpenAI', 'In-App Purchases', 'WidgetKit', 'SiriKit', 'Action Button'],
         screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Home',
-            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+List',
-            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+AI',
-            'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Settings'
+            'aismartreminder/img_1.PNG',
+            'aismartreminder/img_2.PNG',
+            'aismartreminder/img_3.PNG',
+            'aismartreminder/img_4.PNG',
+            'aismartreminder/img_5.PNG',
+            'aismartreminder/img_6.PNG',
+            'aismartreminder/img_7.PNG'
         ],
         appStoreUrl: 'https://apps.apple.com/us/app/ai-smart-reminder/id6747449550',
         github: '#',
         demo: '#'
     },
     {
-        slug: 'peace-of-mind',
-        title: 'Child Minder Safer Child App',
-        description: 'Real-time motion tracking app using Core Motion, push notifications, and background activity monitoring.',
-        detailedDescription: `Peace of Mind is a child movement safety app designed for parents. 
-Using Core Motion and CMMotionActivityManager, I built a real-time motion tracking system that detects dangerous 
-movement patterns and sends alerts. 
-I designed a background activity monitoring flow, integrated APNs for safety notifications, and improved battery usage. 
-The experience required deep understanding of motion APIs, background modes, and performance constraints.`,
-        technologies: ['Swift', 'UIKit', 'CoreMotion', 'CoreLocation', 'Push Notifications', 'Background Modes', 'MVVM'],
-        screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Home',
-            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Map',
-            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Alerts',
-            'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Settings'
-        ],
-        appStoreUrl: 'https://apps.apple.com/us/app/child-minder-safer-child-app/id1597459223',
-        github: '#',
-        demo: '#'
-    },
-    {
         slug: 'multiroom',
-        title: 'Multiroom – Room Scanning App',
+        title: 'Multiroom',
         description: 'Implemented advanced room scanning using RoomPlan with SceneKit & RealityKit visualizations.',
         detailedDescription: `I built an app using Apple's RoomPlan API to scan rooms and generate accurate 3D and 2D models. 
 I integrated SceneKit and RealityKit to display models interactively and added a custom workflow for marking damaged 
@@ -131,7 +115,7 @@ These areas were visualized in both 2D and 3D models, helping users identify and
     },
     {
         slug: 'viflux',
-        title: 'Viflux – 3D Object Scanning',
+        title: 'Viflux',
         description: 'Created a 3D object scanning app that exports USDZ models and supports backend uploads.',
         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
 I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
@@ -148,7 +132,7 @@ The app focused on accuracy, simplicity, and reliability for users needing quick
     },
     {
         slug: 'mimic-me',
-        title: 'Mimic.me – AI Image Generation App',
+        title: 'Mimic.me',
         description: 'Built an AI-based image generation app using Stable Diffusion and advanced UI workflows.',
         detailedDescription: `Mimic.me allows users to generate stylized images using Stable Diffusion. 
 I developed the entire iOS app, designed the UI in SwiftUI, handled model uploads, managed AI prompts, 
@@ -156,12 +140,72 @@ and optimized images for performance.
 The app focused on delivering fast generation times, beautiful design, and user-friendly controls.`,
         technologies: ['Swift', 'SwiftUI', 'Stable Diffusion', 'Firebase', 'RunPod'],
         screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Mimic+Generate',
-            'https://placehold.co/1170x2532/orange/white?text=Mimic+Gallery',
-            'https://placehold.co/1170x2532/orange/white?text=Mimic+Edit',
-            'https://placehold.co/1170x2532/orange/white?text=Mimic+Share'
+            'mimic/img_1.PNG',
+            'mimic/img_2.PNG',
+            'mimic/img_3.PNG',
+            'mimic/img_4.PNG',
+            'mimic/img_5.PNG'
         ],
         appStoreUrl: 'https://apps.apple.com/us/app/mimic-me/id6480029254',
+        github: '#',
+        demo: '#'
+    },
+    {
+        slug: 'puremetric',
+        title: 'PureMetric',
+        description: 'A simple and precise macro tracker with manual entry, instant calculations, and clean daily reports.',
+        detailedDescription: `PureMetric is a streamlined macro tracking app designed for users who want simplicity without sacrificing precision. 
+I built the entire iOS app using SwiftUI with a focus on clean, intuitive design. 
+The app features manual food entry, instant macro calculations, and beautiful daily reports — all without databases or clutter. 
+Perfect for users who want full control over their nutrition tracking with a lightweight, no-nonsense approach.`,
+        technologies: ['Swift', 'SwiftUI', 'SwiftData', 'MVVM', 'Charts'],
+        screenshots: [
+            'puremetric/img_1.PNG',
+            'puremetric/img_2.PNG',
+            'puremetric/img_3.PNG'
+        ],
+        github: '#',
+        demo: '#'
+    },
+    {
+        slug: 'slyai',
+        title: 'Sly AI',
+        description: 'An AI-powered app for creating funny prank images and videos with advanced generation capabilities.',
+        detailedDescription: `SlyAI is an entertaining AI-powered app designed for creating hilarious prank images and videos. 
+I developed the complete iOS application using SwiftUI, integrating advanced AI image and video generation APIs. 
+The app allows users to easily create convincing prank content with intuitive controls and fast generation times. 
+Built with a focus on fun user experience and seamless content creation workflows.`,
+        technologies: ['Swift', 'SwiftUI', 'Gemini', 'MVVM', 'FastAPI', 'Python', 'Supabase'],
+        screenshots: [
+            'slyai/img_1.PNG',
+            'slyai/img_2.PNG',
+            'slyai/img_3.PNG',
+            'slyai/img_4.PNG'
+        ],
+        github: '#',
+        demo: '#'
+    },
+    {
+        slug: 'darkfinder',
+        title: 'Dark Finder',
+        description: 'A powerful search tool for finding publicly available information about people online.',
+        detailedDescription: `Dark Finder is an OSINT (Open Source Intelligence) tool that helps users find publicly available information about people online. 
+I built the iOS app with SwiftUI, integrating multiple search APIs and data aggregation services. 
+The app can discover social media profiles, images, phone numbers, location data, and other publicly accessible information. 
+Designed with a sleek dark interface and powerful search capabilities, it provides comprehensive results from various online sources.`,
+        technologies: ['Swift', 'SwiftUI', 'REST APIs', 'Gemini', 'Firebase', 'MVVM', 'NodeJS'],
+        screenshots: [
+            'darkfinder/img_1.PNG',
+            'darkfinder/img_2.PNG',
+            'darkfinder/img_3.PNG',
+            'darkfinder/img_4.PNG',
+            'darkfinder/img_5.PNG',
+            'darkfinder/img_6.PNG',
+            'darkfinder/img_7.PNG',
+            'darkfinder/img_8.PNG',
+            'darkfinder/img_9.PNG',
+            'darkfinder/img_10.PNG'
+        ],
         github: '#',
         demo: '#'
     }

@@ -21,7 +21,7 @@
 						</h1>
 
 						<p class="mb-10 max-w-xl text-xl leading-relaxed font-light text-white/75">
-							Senior iOS Developer crafting futuristic, high-performance applications with Swift &
+							Senior iOS Developer crafting production-ready, high-performance applications with Swift &
 							SwiftUI. Turning complex ideas into seamless, fluid realities.
 						</p>
 
