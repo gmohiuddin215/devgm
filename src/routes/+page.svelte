@@ -1,6 +1,6 @@
 <script>
 	import { projects, skills, socialLinks, reviews } from '$lib/data';
-	import profile from '$lib/assets/profile.jpg';
+	import profile from '$lib/assets/profile.png';
 </script>
 
 <!-- Hero Section -->

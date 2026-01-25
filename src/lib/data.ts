@@ -29,6 +29,26 @@ export const skills = [
 
 export const projects = [
     {
+        slug: 'invoza',
+        title: 'Invoza – Invoice Maker',
+        description: 'A professional invoicing and estimates app with beautiful UI, PDF export, and multi-currency support.',
+        detailedDescription: `Invoza is a comprehensive invoicing app built for freelancers and small businesses. 
+I designed and developed the entire iOS app using SwiftUI, implementing features such as invoice and estimate creation, 
+PDF generation and export, multi-currency support, client management, and customizable invoice templates. 
+The app features a clean, intuitive interface that makes billing effortless, with support for recurring invoices, 
+payment tracking, and detailed financial reports. Built with a focus on user experience, reliability, and professional presentation.`,
+        technologies: ['SwiftUI', 'PDF Generation', 'Core Data', 'CloudKit', 'In-App Purchases'],
+        screenshots: [
+            'https://placehold.co/1170x2532/teal/white?text=Invoza+Home',
+            'https://placehold.co/1170x2532/teal/white?text=Invoza+Invoice',
+            'https://placehold.co/1170x2532/teal/white?text=Invoza+Clients',
+            'https://placehold.co/1170x2532/teal/white?text=Invoza+Reports'
+        ],
+        appStoreUrl: 'https://apps.apple.com/us/app/invoza-invoice-maker/id6756181651',
+        github: '#',
+        demo: '#'
+    },
+    {
         slug: 'leaf',
         title: 'Leaf – Social Calendar App',
         description: 'Redesigned and modernized a legacy UIKit app into SwiftUI, optimizing performance and improving architecture.',
@@ -44,6 +64,7 @@ navigation flows. The result was an app that performed faster, was easier to mai
             'https://placehold.co/1170x2532/orange/white?text=Leaf+Events',
             'https://placehold.co/1170x2532/orange/white?text=Leaf+Settings'
         ],
+        appStoreUrl: 'https://apps.apple.com/us/app/leaf-build-your-community/id1040588046',
         github: '#',
         demo: '#'
     },
@@ -63,12 +84,13 @@ The project focused heavily on user experience, speed, and reliability.`,
             'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+AI',
             'https://placehold.co/1170x2532/orange/white?text=Smart+Reminder+Settings'
         ],
+        appStoreUrl: 'https://apps.apple.com/us/app/ai-smart-reminder/id6747449550',
         github: '#',
         demo: '#'
     },
     {
         slug: 'peace-of-mind',
-        title: 'Peace of Mind – Child Safety Monitoring App',
+        title: 'Child Minder Safer Child App',
         description: 'Real-time motion tracking app using Core Motion, push notifications, and background activity monitoring.',
         detailedDescription: `Peace of Mind is a child movement safety app designed for parents. 
 Using Core Motion and CMMotionActivityManager, I built a real-time motion tracking system that detects dangerous 
@@ -82,6 +104,7 @@ The experience required deep understanding of motion APIs, background modes, and
             'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Alerts',
             'https://placehold.co/1170x2532/orange/white?text=Peace+of+Mind+Settings'
         ],
+        appStoreUrl: 'https://apps.apple.com/us/app/child-minder-safer-child-app/id1597459223',
         github: '#',
         demo: '#'
     },
@@ -135,24 +158,7 @@ The app focused on delivering fast generation times, beautiful design, and user-
             'https://placehold.co/1170x2532/orange/white?text=Mimic+Edit',
             'https://placehold.co/1170x2532/orange/white?text=Mimic+Share'
         ],
-        github: '#',
-        demo: '#'
-    },
-    {
-        slug: 'wedding-planner',
-        title: 'Wedding Planner App',
-        description: 'Cross-platform iOS & Android wedding planning app with tasks, budget, emails, and user accounts.',
-        detailedDescription: `I designed and developed a wedding planning app that helps couples manage tasks, budgets, guest lists, 
-checklists, emails, and reminders. 
-I implemented user authentication, cloud syncing, email integrations, multi-list views, and real-time updates. 
-The app had a major focus on clean UX and multi-platform consistency.`,
-        technologies: ['SwiftUI', 'Kotlin', 'Supabase', 'Authentication', 'Cloud Sync', 'Email Integration'],
-        screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Wedding+Dashboard',
-            'https://placehold.co/1170x2532/orange/white?text=Wedding+Guests',
-            'https://placehold.co/1170x2532/orange/white?text=Wedding+Budget',
-            'https://placehold.co/1170x2532/orange/white?text=Wedding+Checklist'
-        ],
+        appStoreUrl: 'https://apps.apple.com/us/app/mimic-me/id6480029254',
         github: '#',
         demo: '#'
     }
