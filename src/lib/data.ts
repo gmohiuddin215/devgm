@@ -105,31 +105,36 @@ areas on walls and ceilings.
 These areas were visualized in both 2D and 3D models, helping users identify and document structural issues.`,
         technologies: ['Swift', 'SwiftUI', 'RoomPlan', 'SceneKit', 'RealityKit', 'ARKit', 'MVVM'],
         screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Scan',
-            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Model',
-            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Edit',
-            'https://placehold.co/1170x2532/orange/white?text=Multiroom+Export'
+            'multiroom/img_1.PNG',
+            'multiroom/img_2.PNG',
+            'multiroom/img_3.PNG',
+            'multiroom/img_4.PNG',
+            'multiroom/img_5.PNG',
+            'multiroom/img_6.PNG',
+            'multiroom/img_7.PNG',
+            'multiroom/img_8.PNG',
+            'multiroom/img_9.PNG'
         ],
         github: '#',
         demo: '#'
     },
-    {
-        slug: 'viflux',
-        title: 'Viflux',
-        description: 'Created a 3D object scanning app that exports USDZ models and supports backend uploads.',
-        detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
-I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
-The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
-        technologies: ['Swift', 'SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
-        screenshots: [
-            'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
-            'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
-            'https://placehold.co/1170x2532/orange/white?text=Viflux+Gallery',
-            'https://placehold.co/1170x2532/orange/white?text=Viflux+Profile'
-        ],
-        github: '#',
-        demo: '#'
-    },
+//     {
+//         slug: 'viflux',
+//         title: 'Viflux',
+//         description: 'Created a 3D object scanning app that exports USDZ models and supports backend uploads.',
+//         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
+// I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
+// The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
+//         technologies: ['Swift', 'SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
+//         screenshots: [
+//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
+//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
+//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Gallery',
+//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Profile'
+//         ],
+//         github: '#',
+//         demo: '#'
+//     },
     {
         slug: 'mimic-me',
         title: 'Mimic.me',
