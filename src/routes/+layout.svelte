@@ -38,7 +38,7 @@
 		{#if $page.url.pathname !== '/'}
 			<a
 				href="/"
-				class="glass-panel absolute left-4 flex h-12 w-12 items-center justify-center rounded-full text-white/70 transition-colors hover:text-white"
+				class="glass-panel absolute left-4 flex h-12 w-12 items-center justify-center rounded-full text-white transition-all hover:bg-white/20 hover:scale-110"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
