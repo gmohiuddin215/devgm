@@ -192,7 +192,7 @@
 <section id="projects" class="relative py-32">
 	<div class="relative z-10 container mx-auto px-4">
 		<div class="mb-20 text-center">
-			<h2 class="mb-6 text-4xl font-bold md:text-5xl">Selected Works</h2>
+			<h2 class="mb-6 text-4xl font-bold md:text-5xl">My Work</h2>
 			<p class="mx-auto max-w-2xl text-white/75">
 				A collection of projects that showcase my passion for design and engineering.
 			</p>

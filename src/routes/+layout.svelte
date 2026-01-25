@@ -20,8 +20,8 @@
 
 	const navItems = [
 		{ name: 'About', href: '#about', icon: User },
-		{ name: 'Reviews', href: '#reviews', icon: UserStar },
 		{ name: 'Projects', href: '#projects', icon: FolderGit2 },
+		{ name: 'Reviews', href: '#reviews', icon: UserStar },
 		{ name: 'Contact', href: '#contact', icon: Mail }
 	];
 </script>
@@ -38,11 +38,11 @@
 		{#if $page.url.pathname !== '/'}
 			<a
 				href="/"
-				class="glass-panel absolute left-4 flex h-12 w-12 items-center justify-center rounded-full text-white transition-all hover:bg-white/20 hover:scale-110"
+				class="glass-panel absolute left-4 flex h-14 w-14 items-center justify-center rounded-full text-white transition-all hover:scale-110"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					class="h-5 w-5 transition-transform group-hover:-translate-x-1"
+					class="h-7 w-7 transition-transform group-hover:-translate-x-1"
 					viewBox="0 0 20 20"
 					fill="currentColor"
 				>
@@ -55,10 +55,10 @@
 			</a>
 		{/if}
 
-		<div class="glass-panel mx-4 flex items-center justify-center rounded-full px-6 py-3">
+		<div class="glass-panel mx-4 flex items-center justify-center rounded-full px-6 py-3 transition-all hover:scale-110">
 			<a href="/" class="group flex items-center gap-2 text-xl font-bold tracking-tight">
 				<span
-					class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent transition-all group-hover:to-purple-500"
+					class="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent"
 				>
 					dev<span class="font-light">gm</span>
 				</span>

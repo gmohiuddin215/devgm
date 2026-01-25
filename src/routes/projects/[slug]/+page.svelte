@@ -188,7 +188,7 @@
 		<button
 			type="button"
 			on:click={closeLightbox}
-			class="glass-panel absolute top-6 right-6 z-10 rounded-full bg-white/10 p-3 text-white transition-all hover:bg-white/20 hover:scale-110"
+			class="glass-panel absolute top-6 right-6 z-10 rounded-full p-3 text-white transition-all hover:scale-110"
 		>
 			<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -196,7 +196,7 @@
 		</button>
 		
 		<!-- Image counter -->
-		<div class="glass-panel absolute top-6 left-6 z-10 rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
+		<div class="glass-panel absolute top-6 left-6 z-10 rounded-full px-4 py-2 text-sm font-medium text-white">
 			{lightboxIndex + 1} / {project.screenshots.length}
 		</div>
 		
@@ -205,7 +205,7 @@
 			<button
 				type="button"
 				on:click|stopPropagation={prevImage}
-				class="glass-panel absolute left-4 z-10 rounded-full bg-white/10 p-4 text-white transition-all hover:bg-white/20 hover:scale-110 md:left-8"
+				class="glass-panel absolute left-4 z-10 rounded-full p-4 text-white transition-all hover:scale-110 md:left-8"
 			>
 				<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -218,7 +218,7 @@
 			<button
 				type="button"
 				on:click|stopPropagation={nextImage}
-				class="glass-panel absolute right-4 z-10 rounded-full bg-white/10 p-4 text-white transition-all hover:bg-white/20 hover:scale-110 md:right-8"
+				class="glass-panel absolute right-4 z-10 rounded-full p-4 text-white transition-all hover:scale-110 md:right-8"
 			>
 				<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
