@@ -61,7 +61,26 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <svelte:head>
-	<title>{project.title} | Case Study</title>
+	<!-- Primary Meta Tags -->
+	<title>{project.title} | Case Study - Ghulam Mohiuddin</title>
+	<meta name="title" content="{project.title} | Case Study - Ghulam Mohiuddin" />
+	<meta name="description" content={project.description} />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://devgm.vercel.app/projects/{project.slug}" />
+	<meta property="og:title" content="{project.title} | Case Study" />
+	<meta property="og:description" content={project.description} />
+	<meta property="og:image" content="https://devgm.vercel.app/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://devgm.vercel.app/projects/{project.slug}" />
+	<meta property="twitter:title" content="{project.title} | Case Study" />
+	<meta property="twitter:description" content={project.description} />
+	<meta property="twitter:image" content="https://devgm.vercel.app/og-image.png" />
 </svelte:head>
 
 <div class="min-h-screen pt-32 pb-20">

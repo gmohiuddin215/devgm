@@ -28,6 +28,27 @@
 
 <svelte:head>
 	<link rel="icon" href="/favicon.ico" />
+	
+	<!-- Primary Meta Tags -->
+	<title>Ghulam Mohiuddin | Senior iOS Developer</title>
+	<meta name="title" content="Ghulam Mohiuddin | Senior iOS Developer" />
+	<meta name="description" content="Senior iOS Developer crafting production-ready, high-performance applications with Swift & SwiftUI. Turning complex ideas into seamless, fluid realities." />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://devgm.vercel.app/" />
+	<meta property="og:title" content="Ghulam Mohiuddin | Senior iOS Developer" />
+	<meta property="og:description" content="Senior iOS Developer crafting production-ready, high-performance applications with Swift & SwiftUI. Turning complex ideas into seamless, fluid realities." />
+	<meta property="og:image" content="https://devgm.vercel.app/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://devgm.vercel.app/" />
+	<meta property="twitter:title" content="Ghulam Mohiuddin | Senior iOS Developer" />
+	<meta property="twitter:description" content="Senior iOS Developer crafting production-ready, high-performance applications with Swift & SwiftUI. Turning complex ideas into seamless, fluid realities." />
+	<meta property="twitter:image" content="https://devgm.vercel.app/og-image.png" />
 </svelte:head>
 
 <header
