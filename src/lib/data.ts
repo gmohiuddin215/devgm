@@ -45,7 +45,8 @@ payment tracking, and detailed financial reports. Built with a focus on user exp
             'invoza/img_1.PNG',
             'invoza/img_2.PNG',
             'invoza/img_3.PNG',
-            'invoza/img_4.PNG'
+            'invoza/img_4.PNG',
+            'invoza/img_5.PNG',
         ],
         appStoreUrl: 'https://apps.apple.com/us/app/invoza-invoice-maker/id6756181651',
         github: '#',
@@ -87,9 +88,6 @@ The project focused heavily on user experience, speed, and reliability.`,
             'aismartreminder/img_2.PNG',
             'aismartreminder/img_3.PNG',
             'aismartreminder/img_4.PNG',
-            'aismartreminder/img_5.PNG',
-            'aismartreminder/img_6.PNG',
-            'aismartreminder/img_7.PNG'
         ],
         appStoreUrl: 'https://apps.apple.com/us/app/ai-smart-reminder/id6747449550',
         github: '#',
@@ -118,23 +116,23 @@ These areas were visualized in both 2D and 3D models, helping users identify and
         github: '#',
         demo: '#'
     },
-//     {
-//         slug: 'viflux',
-//         title: 'Viflux',
-//         description: 'Created a 3D object scanning app that exports USDZ models and supports backend uploads.',
-//         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
-// I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
-// The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
-//         technologies: ['Swift', 'SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
-//         screenshots: [
-//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
-//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
-//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Gallery',
-//             'https://placehold.co/1170x2532/orange/white?text=Viflux+Profile'
-//         ],
-//         github: '#',
-//         demo: '#'
-//     },
+    //     {
+    //         slug: 'viflux',
+    //         title: 'Viflux',
+    //         description: 'Created a 3D object scanning app that exports USDZ models and supports backend uploads.',
+    //         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
+    // I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
+    // The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
+    //         technologies: ['Swift', 'SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
+    //         screenshots: [
+    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
+    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
+    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Gallery',
+    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Profile'
+    //         ],
+    //         github: '#',
+    //         demo: '#'
+    //     },
     {
         slug: 'mimic-me',
         title: 'Mimic.me',
@@ -181,6 +179,7 @@ I developed the complete iOS application using SwiftUI, integrating advanced AI 
 The app allows users to easily create convincing prank content with intuitive controls and fast generation times. 
 Built with a focus on fun user experience and seamless content creation workflows.`,
         technologies: ['Swift', 'SwiftUI', 'Gemini', 'MVVM', 'FastAPI', 'Python', 'Supabase'],
+        appStoreUrl: 'https://apps.apple.com/pk/app/sly-ai-prank-photos-videos/id6757885307',
         screenshots: [
             'slyai/img_1.PNG',
             'slyai/img_2.PNG',
