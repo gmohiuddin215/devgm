@@ -1,6 +1,16 @@
 <script>
 	import { projects, skills, socialLinks, reviews } from '$lib/data';
 	import profile from '$lib/assets/profile.png';
+
+	// Dynamically import project screenshots
+	const imageModules = import.meta.glob('$lib/assets/**/*.PNG', { eager: true });
+
+	function getImageUrl(screenshotPath) {
+		if (!screenshotPath || screenshotPath.startsWith('http')) return screenshotPath;
+		const fullPath = `/src/lib/assets/${screenshotPath}`;
+		const module = imageModules[fullPath];
+		return module ? module.default : screenshotPath;
+	}
 </script>
 
 <!-- Hero Section -->
@@ -198,7 +208,7 @@
 			</p>
 		</div>
 
-		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+		<div class="grid gap-8 md:grid-cols-2">
 			{#each projects as project}
 				<div class="group relative">
 					<div
@@ -207,52 +217,57 @@
 					<div
 						class="glass-panel relative flex h-full flex-col rounded-3xl p-8 transition-transform duration-500 hover:-translate-y-2"
 					>
-						<div class="mb-6 flex items-start justify-between">
-							<div class="rounded-2xl bg-white/10 p-3 text-white">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="h-8 w-8"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="1.5"
-										d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-									/>
-								</svg>
+						<!-- Content row: Text left, Screenshot preview right -->
+						<div class="mb-6 flex gap-6">
+							<!-- Left: Title, description, tags -->
+							<div class="flex flex-1 flex-col min-w-0">
+								<div class="mb-3">
+									<div class="rounded-full bg-white/10 px-3 py-1 font-mono text-xs text-white inline-block">
+										iOS App
+									</div>
+								</div>
+
+								<h3 class="mb-3 text-2xl font-bold text-white transition-colors">
+									{project.title}
+								</h3>
+
+								<p class="mb-4 flex-1 leading-relaxed text-white/75 text-sm">
+									{project.description}
+								</p>
+
+								<div class="flex flex-wrap gap-2">
+									{#each project.technologies.slice(0, 3) as tech}
+										<span
+											class="rounded-full border border-white/50 bg-white/20 px-3 py-1 text-xs font-medium text-white"
+										>
+											{tech}
+										</span>
+									{/each}
+									{#if project.technologies.length > 3}
+										<span
+											class="rounded-full border border-white/50 bg-white/20 px-3 py-1 text-xs font-medium text-white"
+											>+{project.technologies.length - 3}</span
+										>
+									{/if}
+								</div>
 							</div>
-							<div class="rounded-full bg-white/10 px-3 py-1 font-mono text-xs text-white">
-								iOS App
-							</div>
-						</div>
 
-						<h3 class="mb-3 text-2xl font-bold text-white transition-colors">
-							{project.title}
-						</h3>
-
-						<p class="mb-6 flex-1 leading-relaxed text-white/75">
-							{project.description}
-						</p>
-
-						<div class="mb-8 flex flex-wrap gap-2">
-							{#each project.technologies.slice(0, 3) as tech}
-								<span
-									class="rounded-full border border-white/50 bg-white/20 px-3 py-1 text-xs font-medium text-white"
-								>
-									{tech}
-								</span>
-							{/each}
-							{#if project.technologies.length > 3}
-								<span
-									class="rounded-full border border-white/50 bg-white/20 px-3 py-1 text-xs font-medium text-white"
-									>+{project.technologies.length - 3}</span
-								>
+							<!-- Right: Full vertical screenshot preview -->
+							{#if project.screenshots && project.screenshots.length > 0 && !project.screenshots[0].startsWith('http')}
+								<div class="hidden sm:block w-28 shrink-0 self-center">
+									<div class="overflow-hidden rounded-xl border border-white/10 shadow-lg shadow-black/20 bg-black">
+										<img
+											src={getImageUrl(project.screenshots[0])}
+											alt="{project.title} preview"
+											class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+											loading="lazy"
+										/>
+									</div>
+								</div>
 							{/if}
 						</div>
 
+						<!-- Button: full width below -->
 						<a
 							href="/projects/{project.slug}"
 							class="glass-button flex w-full items-center justify-center gap-2 rounded-xl bg-white/10 py-3 text-center font-medium text-white transition-all"
