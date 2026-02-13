@@ -3,7 +3,8 @@ export const socialLinks = {
     linkedin: 'https://linkedin.com/in/mohiuddin2398',
     email: 'mailto:g.mohiuddin215@gmail.com',
     fiverr: 'https://www.fiverr.com/s/DBkkdrP',
-    upwork: 'https://www.upwork.com/freelancers/~016d7a9c811354e794'
+    upwork: 'https://www.upwork.com/freelancers/~016d7a9c811354e794',
+    contra: 'https://contra.com/ghulam_mohiuddin_xop0t6wa?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=ghulam_mohiuddin_xop0t6wa'
 };
 
 export const experience = [

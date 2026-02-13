@@ -442,10 +442,31 @@
 				</div>
 			</a>
 
+			<!-- Contra -->
+			<a
+				href={socialLinks.contra}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="glass-panel group relative flex flex-col items-center justify-center gap-4 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10"
+			>
+				<div
+					class="flex h-16 w-16 items-center justify-center rounded-full bg-[#FFBE0B]/20 text-[#FFBE0B] transition-colors group-hover:bg-[#FFBE0B] group-hover:text-black"
+				>
+					<svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M12 0C12 0 14.5 9.5 12 12C9.5 14.5 0 12 0 12C0 12 9.5 14.5 12 12C14.5 9.5 12 0 12 0Z" transform="translate(0, 0)"/>
+						<path d="M12 2C10.5 7 7 10.5 2 12C7 13.5 10.5 17 12 22C13.5 17 17 13.5 22 12C17 10.5 13.5 7 12 2Z"/>
+					</svg>
+				</div>
+				<div>
+					<h3 class="mb-1 text-xl font-bold text-white">Contra</h3>
+					<p class="text-sm text-white/60">Commission-free hiring</p>
+				</div>
+			</a>
+
 			<!-- Email -->
 			<a
 				href={socialLinks.email}
-				class="glass-panel group relative flex flex-col items-center justify-center gap-4 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10 sm:col-span-2 lg:col-span-2"
+				class="glass-panel group relative flex flex-col items-center justify-center gap-4 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:bg-white/10"
 			>
 				<div
 					class="flex h-16 w-16 items-center justify-center rounded-full bg-purple-500/20 text-purple-400 transition-colors group-hover:bg-purple-500 group-hover:text-white"
