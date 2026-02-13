@@ -28,27 +28,117 @@
 
 <svelte:head>
 	<link rel="icon" href="/favicon.ico" />
+	<link rel="canonical" href="https://devgm.vercel.app{$page.url.pathname}" />
 	
 	<!-- Primary Meta Tags -->
-	<title>Ghulam Mohiuddin | Senior iOS Developer</title>
-	<meta name="title" content="Ghulam Mohiuddin | Senior iOS Developer" />
-	<meta name="description" content="Senior iOS Developer crafting production-ready, high-performance applications with Swift & SwiftUI. Turning complex ideas into seamless, fluid realities." />
+	<title>Ghulam Mohiuddin | Senior iOS Developer — Swift & SwiftUI Expert</title>
+	<meta name="title" content="Ghulam Mohiuddin | Senior iOS Developer — Swift & SwiftUI Expert" />
+	<meta name="description" content="Ghulam Mohiuddin is a Senior iOS Developer with 4+ years of experience crafting production-ready, high-performance applications with Swift & SwiftUI. Expert in SceneKit, RealityKit, AI integration, and modern iOS architectures. Available for freelance and contract work." />
+	<meta name="keywords" content="iOS Developer, Senior iOS Developer, Swift Developer, SwiftUI Developer, iOS App Developer, Mobile Developer, iPhone Developer, iPad Developer, Swift, SwiftUI, iOS Development, Hire iOS Developer, Freelance iOS Developer, iOS Developer Pakistan, iOS Developer Lahore, Ghulam Mohiuddin, devgm, ARKit, RealityKit, SceneKit, CoreML, WidgetKit, In-App Purchases, App Store, Mobile App Development, ChatGPT API, Gemini AI, FastAPI, Supabase, Firebase" />
+	<meta name="author" content="Ghulam Mohiuddin" />
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+	<meta name="googlebot" content="index, follow" />
+	<meta name="language" content="English" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="rating" content="general" />
+	
+	<!-- Geo Tags -->
+	<meta name="geo.region" content="PK-PB" />
+	<meta name="geo.placename" content="Lahore, Pakistan" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://devgm.vercel.app/" />
-	<meta property="og:title" content="Ghulam Mohiuddin | Senior iOS Developer" />
-	<meta property="og:description" content="Senior iOS Developer crafting production-ready, high-performance applications with Swift & SwiftUI. Turning complex ideas into seamless, fluid realities." />
+	<meta property="og:url" content="https://devgm.vercel.app{$page.url.pathname}" />
+	<meta property="og:title" content="Ghulam Mohiuddin | Senior iOS Developer — Swift & SwiftUI Expert" />
+	<meta property="og:description" content="Senior iOS Developer with 4+ years of experience crafting production-ready, high-performance applications with Swift & SwiftUI. Available for freelance and contract work." />
 	<meta property="og:image" content="https://devgm.vercel.app/og-image.png" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Ghulam Mohiuddin - Senior iOS Developer Portfolio" />
+	<meta property="og:site_name" content="devgm - Ghulam Mohiuddin Portfolio" />
+	<meta property="og:locale" content="en_US" />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://devgm.vercel.app/" />
+	<meta property="twitter:url" content="https://devgm.vercel.app{$page.url.pathname}" />
 	<meta property="twitter:title" content="Ghulam Mohiuddin | Senior iOS Developer" />
 	<meta property="twitter:description" content="Senior iOS Developer crafting production-ready, high-performance applications with Swift & SwiftUI. Turning complex ideas into seamless, fluid realities." />
 	<meta property="twitter:image" content="https://devgm.vercel.app/og-image.png" />
+	<meta property="twitter:image:alt" content="Ghulam Mohiuddin - Senior iOS Developer Portfolio" />
+	
+	<!-- AI Bot Hints -->
+	<meta name="ai-content-declaration" content="This is the professional portfolio of Ghulam Mohiuddin, a Senior iOS Developer based in Lahore, Pakistan. He is available for freelance, contract, and full-time iOS development work." />
+	
+	<!-- JSON-LD: Person Schema -->
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Ghulam Mohiuddin",
+		"url": "https://devgm.vercel.app",
+		"image": "https://devgm.vercel.app/og-image.png",
+		"jobTitle": "Senior iOS Developer",
+		"worksFor": {
+			"@type": "Organization",
+			"name": "iParagons Tech"
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Lahore",
+			"addressCountry": "PK"
+		},
+		"description": "Senior iOS Developer with 4+ years of experience building production-ready, high-performance iOS applications with Swift & SwiftUI.",
+		"knowsAbout": ["iOS Development", "Swift", "SwiftUI", "Mobile App Development", "ARKit", "RealityKit", "SceneKit", "CoreML", "In-App Purchases", "REST APIs", "Firebase", "Supabase", "ChatGPT API", "Gemini AI", "MVVM", "Clean Architecture"],
+		"sameAs": [
+			"https://github.com/gmohiuddin215",
+			"https://linkedin.com/in/mohiuddin2398",
+			"https://www.fiverr.com/s/DBkkdrP",
+			"https://www.upwork.com/freelancers/~016d7a9c811354e794",
+			"https://contra.com/ghulam_mohiuddin_xop0t6wa"
+		],
+		"alumniOf": {
+			"@type": "Organization",
+			"name": "iParagons Tech"
+		}
+	})}</script>`}
+	
+	<!-- JSON-LD: WebSite Schema -->
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "Ghulam Mohiuddin - Senior iOS Developer Portfolio",
+		"url": "https://devgm.vercel.app",
+		"description": "Professional portfolio of Ghulam Mohiuddin, a Senior iOS Developer specializing in Swift, SwiftUI, and modern iOS frameworks.",
+		"author": {
+			"@type": "Person",
+			"name": "Ghulam Mohiuddin"
+		}
+	})}</script>`}
+	
+	<!-- JSON-LD: Professional Service -->
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "ProfessionalService",
+		"name": "Ghulam Mohiuddin - iOS Development Services",
+		"url": "https://devgm.vercel.app",
+		"description": "Professional iOS development services including custom app development, SwiftUI implementation, AR/VR experiences, AI integration, and App Store deployment.",
+		"areaServed": "Worldwide",
+		"serviceType": "iOS App Development",
+		"provider": {
+			"@type": "Person",
+			"name": "Ghulam Mohiuddin"
+		},
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "iOS Development Services",
+			"itemListElement": [
+				{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom iOS App Development"}},
+				{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SwiftUI App Development"}},
+				{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AR/VR App Development"}},
+				{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Integration for iOS"}},
+				{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "App Store Optimization"}}
+			]
+		}
+	})}</script>`}
 </svelte:head>
 
 <header

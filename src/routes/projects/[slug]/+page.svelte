@@ -62,25 +62,78 @@
 
 <svelte:head>
 	<!-- Primary Meta Tags -->
-	<title>{project.title} | Case Study - Ghulam Mohiuddin</title>
-	<meta name="title" content="{project.title} | Case Study - Ghulam Mohiuddin" />
-	<meta name="description" content={project.description} />
+	<title>{project.title} — iOS App by Ghulam Mohiuddin | Senior iOS Developer</title>
+	<meta name="title" content="{project.title} — iOS App by Ghulam Mohiuddin | Senior iOS Developer" />
+	<meta name="description" content="{project.title}: {project.description} Built with {project.technologies.join(', ')} by Ghulam Mohiuddin, Senior iOS Developer." />
+	<meta name="keywords" content="{project.title}, {project.technologies.join(', ')}, iOS App, Swift App, SwiftUI App, Ghulam Mohiuddin, Mobile App, App Store, Case Study" />
+	<meta name="author" content="Ghulam Mohiuddin" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://devgm.vercel.app/projects/{project.slug}" />
 	
 	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://devgm.vercel.app/projects/{project.slug}" />
-	<meta property="og:title" content="{project.title} | Case Study" />
+	<meta property="og:title" content="{project.title} — iOS App Case Study" />
 	<meta property="og:description" content={project.description} />
 	<meta property="og:image" content="https://devgm.vercel.app/og-image.png" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
+	<meta property="og:site_name" content="devgm - Ghulam Mohiuddin Portfolio" />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://devgm.vercel.app/projects/{project.slug}" />
-	<meta property="twitter:title" content="{project.title} | Case Study" />
+	<meta property="twitter:title" content="{project.title} — iOS App Case Study" />
 	<meta property="twitter:description" content={project.description} />
 	<meta property="twitter:image" content="https://devgm.vercel.app/og-image.png" />
+	
+	<!-- JSON-LD: SoftwareApplication Schema -->
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": project.title,
+		"description": project.description,
+		"url": `https://devgm.vercel.app/projects/${project.slug}`,
+		"applicationCategory": "MobileApplication",
+		"operatingSystem": "iOS",
+		"author": {
+			"@type": "Person",
+			"name": "Ghulam Mohiuddin",
+			"url": "https://devgm.vercel.app"
+		},
+		"offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		},
+		...(project.appStoreLink ? { "downloadUrl": project.appStoreLink } : {})
+	})}</script>`}
+	
+	<!-- JSON-LD: BreadcrumbList -->
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "https://devgm.vercel.app"
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"name": "Projects",
+				"item": "https://devgm.vercel.app/#projects"
+			},
+			{
+				"@type": "ListItem",
+				"position": 3,
+				"name": project.title,
+				"item": `https://devgm.vercel.app/projects/${project.slug}`
+			}
+		]
+	})}</script>`}
 </svelte:head>
 
 <div class="min-h-screen pt-32 pb-20">

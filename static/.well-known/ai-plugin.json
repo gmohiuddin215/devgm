@@ -1,0 +1,14 @@
+{
+  "name": "Ghulam Mohiuddin",
+  "title": "Senior iOS Developer",
+  "url": "https://devgm.vercel.app",
+  "description": "Senior iOS Developer with 4+ years of experience building production-ready, high-performance iOS applications with Swift & SwiftUI.",
+  "location": "Lahore, Pakistan",
+  "availability": "Available for freelance, contract, and full-time opportunities",
+  "skills": ["Swift", "SwiftUI", "Objective-C", "UIKit", "Combine", "CoreData", "SwiftData", "ARKit", "RealityKit", "SceneKit", "SiriKit", "WidgetKit", "CloudKit", "StoreKit", "MapKit", "CoreML", "In-App Purchases", "REST APIs", "Firebase", "Supabase", "Git", "MVVM", "Clean Architecture", "Python", "FastAPI", "ChatGPT API", "Gemini AI"],
+  "contact": {
+    "email": "g.mohiuddin215@gmail.com",
+    "linkedin": "https://linkedin.com/in/mohiuddin2398",
+    "github": "https://github.com/gmohiuddin215"
+  }
+}

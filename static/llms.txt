@@ -1,0 +1,63 @@
+# Ghulam Mohiuddin - Senior iOS Developer
+
+> Senior iOS Developer with 4+ years of experience crafting production-ready, high-performance mobile applications with Swift & SwiftUI.
+
+## About
+Ghulam Mohiuddin is a Senior iOS Developer based in Lahore, Pakistan, currently working at iParagons Tech. He specializes in Swift, SwiftUI, and modern iOS frameworks including SceneKit, RealityKit, SiriKit, WidgetKit, and In-App Purchases. He has extensive experience building full-stack mobile solutions with backend integrations using REST APIs, ChatGPT API, Gemini AI, FastAPI, and Supabase.
+
+## Skills
+Swift, SwiftUI, Objective-C, UIKit, Combine, CoreData, SwiftData, ARKit, RealityKit, SceneKit, SiriKit, WidgetKit, CloudKit, StoreKit, MapKit, CoreML, In-App Purchases, REST APIs, Firebase, Supabase, Git, Xcode, Instruments, MVVM, Clean Architecture, Python, FastAPI, ChatGPT API, Gemini AI
+
+## Experience
+- **Senior iOS Developer** at iParagons Tech (2021 - Present)
+  - Expert in Swift, SwiftUI, Combine, SceneKit, RealityKit, SiriKit, WidgetKit
+  - Built production apps with In-App Purchases, backend integrations, and AI features
+
+## Featured Projects
+
+### Invoza - Invoice & Estimate Maker
+A professional invoicing and estimates app with beautiful UI, PDF generation, multi-currency support, and cloud sync.
+Technologies: Swift, SwiftUI, CoreData, PDFKit, CloudKit, StoreKit, In-App Purchases, MVVM
+App Store: https://apps.apple.com/us/app/invoza-invoice-maker/id6756181651
+
+### Leaf - Plant Identifier
+An AI-powered plant identification app using advanced machine learning to identify plants from photos.
+Technologies: Swift, SwiftUI, CoreML, Vision, AVFoundation, In-App Purchases, Networking
+
+### AI Smart Reminder
+An intelligent reminder app powered by AI that helps users manage tasks and schedules smartly.
+Technologies: Swift, SwiftUI, ChatGPT API, UserNotifications, CoreData, WidgetKit, MVVM
+App Store: https://apps.apple.com/us/app/ai-smart-reminder/id6747449550
+
+### MultiRoom
+A collaborative space management app with multiple virtual rooms for organizing content and projects.
+Technologies: Swift, SwiftUI, RealityKit, SceneKit, Multipeer Connectivity, CloudKit
+
+### Mimic.me
+AI-powered content creation app that generates personalized content using advanced AI models.
+Technologies: Swift, SwiftUI, Gemini, MVVM, FastAPI, Python, Supabase
+
+### PureMetric
+A comprehensive nutrition tracking app with detailed macro/micro-nutrient analysis and daily reports.
+Technologies: Swift, SwiftUI, SwiftData, HealthKit, Charts, MVVM
+
+### Sly AI - Prank Photos & Videos
+An AI-powered prank content generator using Gemini for creating convincing prank photos and videos.
+Technologies: Swift, SwiftUI, Gemini, MVVM, FastAPI, Python, Supabase
+App Store: https://apps.apple.com/pk/app/sly-ai-prank-photos-videos/id6757885307
+
+### DarkFinder
+A reverse image search and person finder app with AI-powered analysis.
+Technologies: Swift, SwiftUI, Vision, CoreML, Networking, MVVM
+
+## Contact
+- Email: g.mohiuddin215@gmail.com
+- LinkedIn: https://linkedin.com/in/mohiuddin2398
+- GitHub: https://github.com/gmohiuddin215
+- Fiverr: https://www.fiverr.com/s/DBkkdrP
+- Upwork: https://www.upwork.com/freelancers/~016d7a9c811354e794
+- Contra: https://contra.com/ghulam_mohiuddin_xop0t6wa
+- Portfolio: https://devgm.vercel.app
+
+## Availability
+Currently available for freelance projects, contract work, and full-time opportunities.
