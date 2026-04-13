@@ -9,26 +9,45 @@ export const socialLinks = {
 
 export const experience = [
     {
-        role: 'Senior iOS Developer',
+        role: 'AI Engineer & Senior iOS Developer',
         company: 'iParagons Tech',
         duration: '2021 - Present',
-        description: 'Expert in Swift, SwiftUI, Combine, SceneKit, RealityKit, SiriKit, WidgetKit, In-App Purchases, Action Button, Backend, REST APIs, ChatGPT API.',
-        technologies: ['Swift', 'SwiftUI', 'Combine', 'SceneKit', 'RealityKit']
+        description: 'Building intelligent systems and production iOS apps. Expert in AI/ML integration, LLMs, RAG pipelines, Swift, SwiftUI, and full-stack development with Python & FastAPI.',
+        technologies: ['Python', 'PyTorch', 'LangChain', 'Swift', 'SwiftUI', 'FastAPI']
     }
 ];
 
+export const skillCategories = [
+    {
+        category: 'AI & Machine Learning',
+        icon: '🧠',
+        skills: ['Python', 'PyTorch', 'TensorFlow', 'LangChain', 'RAG', 'LLMs', 'Prompt Engineering', 'Hugging Face', 'Vector DBs']
+    },
+    {
+        category: 'iOS & Mobile',
+        icon: '📱',
+        skills: ['Swift', 'SwiftUI', 'Combine', 'SceneKit', 'RealityKit', 'ARKit', 'CoreML', 'WidgetKit']
+    },
+    {
+        category: 'Backend & Infrastructure',
+        icon: '⚡',
+        skills: ['FastAPI', 'Python', 'Supabase', 'Firebase', 'REST APIs', 'PostgreSQL', 'Docker']
+    }
+];
+
+// Keep flat skills for backward compat
 export const skills = [
+    { name: 'Python & AI/ML', level: 'Expert' },
+    { name: 'PyTorch & TensorFlow', level: 'Expert' },
+    { name: 'LangChain & RAG', level: 'Expert' },
+    { name: 'LLMs & Prompt Engineering', level: 'Expert' },
     { name: 'Swift & SwiftUI', level: 'Expert' },
     { name: 'Combine', level: 'Expert' },
     { name: 'SceneKit & RealityKit', level: 'Expert' },
-    { name: 'SiriKit & WidgetKit', level: 'Expert' },
-    { name: 'SwiftData', level: 'Expert' },
-    { name: 'MVVM & VIPER Architecture', level: 'Expert' },
-    { name: 'PDFKit', level: 'Expert' },
-    { name: 'In-App Purchases', level: 'Expert' },
-    { name: 'Backend & REST APIs', level: 'Expert' },
-    { name: 'AI Integration', level: 'Expert' },
-    { name: 'Action Button', level: 'Expert' }
+    { name: 'FastAPI & Python Backend', level: 'Expert' },
+    { name: 'MVVM & Clean Architecture', level: 'Expert' },
+    { name: 'Supabase & Firebase', level: 'Expert' },
+    { name: 'In-App Purchases', level: 'Expert' }
 ];
 
 export const projects = [
@@ -117,23 +136,6 @@ These areas were visualized in both 2D and 3D models, helping users identify and
         github: '#',
         demo: '#'
     },
-    //     {
-    //         slug: 'viflux',
-    //         title: 'Viflux',
-    //         description: 'Created a 3D object scanning app that exports USDZ models and supports backend uploads.',
-    //         detailedDescription: `For Viflux, I created a lightweight 3D scanning app allowing users to scan physical objects and export them as USDZ models. 
-    // I implemented image and model uploads to a backend using custom PHP endpoints with live progress tracking. 
-    // The app focused on accuracy, simplicity, and reliability for users needing quick 3D digitization.`,
-    //         technologies: ['Swift', 'SwiftUI', 'RealityKit', 'Object Capture', '3D Scanning', 'PHP Backend', 'USDZ', 'Networking'],
-    //         screenshots: [
-    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Scan',
-    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Upload',
-    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Gallery',
-    //             'https://placehold.co/1170x2532/orange/white?text=Viflux+Profile'
-    //         ],
-    //         github: '#',
-    //         demo: '#'
-    //     },
     {
         slug: 'mimic-me',
         title: 'Mimic.me',

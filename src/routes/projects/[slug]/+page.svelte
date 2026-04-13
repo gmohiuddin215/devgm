@@ -62,10 +62,10 @@
 
 <svelte:head>
 	<!-- Primary Meta Tags -->
-	<title>{project.title} — iOS App by Ghulam Mohiuddin | Senior iOS Developer</title>
-	<meta name="title" content="{project.title} — iOS App by Ghulam Mohiuddin | Senior iOS Developer" />
-	<meta name="description" content="{project.title}: {project.description} Built with {project.technologies.join(', ')} by Ghulam Mohiuddin, Senior iOS Developer." />
-	<meta name="keywords" content="{project.title}, {project.technologies.join(', ')}, iOS App, Swift App, SwiftUI App, Ghulam Mohiuddin, Mobile App, App Store, Case Study" />
+	<title>{project.title} — App by Ghulam Mohiuddin | AI Engineer & iOS Developer</title>
+	<meta name="title" content="{project.title} — App by Ghulam Mohiuddin | AI Engineer & iOS Developer" />
+	<meta name="description" content="{project.title}: {project.description} Built with {project.technologies.join(', ')} by Ghulam Mohiuddin, AI Engineer & Senior iOS Developer." />
+	<meta name="keywords" content="{project.title}, {project.technologies.join(', ')}, iOS App, Swift App, SwiftUI App, Ghulam Mohiuddin, Mobile App, App Store, Case Study, AI Engineer" />
 	<meta name="author" content="Ghulam Mohiuddin" />
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://devgm.vercel.app/projects/{project.slug}" />
@@ -73,17 +73,17 @@
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="article" />
 	<meta property="og:url" content="https://devgm.vercel.app/projects/{project.slug}" />
-	<meta property="og:title" content="{project.title} — iOS App Case Study" />
+	<meta property="og:title" content="{project.title} — Case Study by Ghulam Mohiuddin" />
 	<meta property="og:description" content={project.description} />
 	<meta property="og:image" content="https://devgm.vercel.app/og-image.png" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
-	<meta property="og:site_name" content="devgm - Ghulam Mohiuddin Portfolio" />
+	<meta property="og:site_name" content="Ghulam Mohiuddin — Portfolio" />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://devgm.vercel.app/projects/{project.slug}" />
-	<meta property="twitter:title" content="{project.title} — iOS App Case Study" />
+	<meta property="twitter:title" content="{project.title} — Case Study by Ghulam Mohiuddin" />
 	<meta property="twitter:description" content={project.description} />
 	<meta property="twitter:image" content="https://devgm.vercel.app/og-image.png" />
 	
@@ -139,45 +139,56 @@
 <div class="min-h-screen pt-32 pb-20">
 	<div class="container mx-auto max-w-5xl px-4">
 		<header class="relative mb-16">
+			<!-- Ambient glow -->
 			<div
-				class="absolute -top-20 -left-20 -z-10 h-64 w-64 rounded-full bg-purple-500/20 blur-[80px]"
+				class="pointer-events-none absolute -top-20 -left-20 -z-10 h-64 w-64 rounded-full opacity-30 blur-[100px]"
+				style="background: radial-gradient(circle, rgba(0,240,255,0.3), transparent 70%);"
 			></div>
-			<h1 class="mb-8 text-5xl leading-tight font-bold text-white md:text-7xl">{project.title}</h1>
-			<p class="max-w-3xl text-2xl leading-relaxed font-light text-white/75">
+			
+			<div class="mb-4">
+				<span class="font-display text-sm font-semibold uppercase tracking-widest text-neon-cyan/60">Case Study</span>
+			</div>
+			<h1 class="mb-8 font-display text-5xl leading-tight font-bold text-white md:text-7xl">{project.title}</h1>
+			<p class="max-w-3xl text-2xl leading-relaxed font-light text-white/50">
 				{project.description}
 			</p>
 		</header>
 
 		<div class="grid items-start gap-12">
-			<!-- Left Column: Role/Techs + Overview -->
+			<!-- Role/Techs + Overview -->
 			<div class="space-y-20">
-				<!-- Role & Techs (Original Structure) -->
+				<!-- Role & Techs -->
 				<div class="grid gap-8 md:grid-cols-3">
-					<div class="glass-panel rounded-3xl border border-cyan-500/1 bg-cyan-500/10 p-8">
-						<h3 class="mb-4 text-xs font-bold tracking-widest text-white uppercase">Role</h3>
-						<p class="text-lg font-medium text-white">Senior iOS Developer</p>
+					<div class="animated-border-card">
+						<div class="glass-panel rounded-3xl p-8" style="border-color: rgba(0,240,255,0.08); background: rgba(0,240,255,0.03);">
+							<h3 class="mb-4 font-display text-xs font-bold tracking-widest text-white/50 uppercase">Role</h3>
+							<p class="text-lg font-medium text-white">AI Engineer & iOS Developer</p>
+						</div>
 					</div>
-					<div
-						class="glass-panel rounded-3xl border border-cyan-500/10 bg-cyan-500/10 p-8 md:col-span-2"
-					>
-						<h3 class="mb-6 text-xs font-bold tracking-widest text-white uppercase">
-							Technologies
-						</h3>
-						<div class="flex flex-wrap gap-3">
-							{#each project.technologies as tech}
-								<span class="glass-button rounded-full px-4 py-2 text-sm text-white">
-									{tech}
-								</span>
-							{/each}
+					<div class="animated-border-card md:col-span-2">
+						<div
+							class="glass-panel rounded-3xl p-8"
+							style="border-color: rgba(0,240,255,0.08); background: rgba(0,240,255,0.03);"
+						>
+							<h3 class="mb-6 font-display text-xs font-bold tracking-widest text-white/50 uppercase">
+								Technologies
+							</h3>
+							<div class="flex flex-wrap gap-3">
+								{#each project.technologies as tech}
+									<span class="glass-button rounded-full px-4 py-2 text-sm text-white/70">
+										{tech}
+									</span>
+								{/each}
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- Overview -->
 				<div class="space-y-16">
-					<section class="glass-panel rounded-3xl border border-white/5 p-8">
-						<h2 class="mb-8 text-2xl font-bold text-white">Overview</h2>
-						<div class="prose max-w-none text-lg leading-relaxed text-white/75 prose-invert">
+					<section class="glass-panel rounded-3xl border-white/5 p-8">
+						<h2 class="mb-8 font-display text-2xl font-bold text-white">Overview</h2>
+						<div class="prose max-w-none text-lg leading-relaxed text-white/50 prose-invert">
 							<p>{project.detailedDescription}</p>
 						</div>
 					</section>
@@ -189,12 +200,12 @@
 							rel="noopener noreferrer"
 							class="glass-button-primary group inline-flex items-center gap-3 rounded-full px-8 py-4 font-semibold tracking-wide transition-all hover:scale-105"
 						>
-							<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+							<svg class="relative z-10 h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
 								<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
 							</svg>
-							Download on App Store
+							<span class="relative z-10">Download on App Store</span>
 							<svg
-								class="h-5 w-5 transition-transform group-hover:translate-x-1"
+								class="relative z-10 h-5 w-5 transition-transform group-hover:translate-x-1"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
@@ -214,13 +225,14 @@
 			<!-- Screenshots Gallery -->
 			{#if project.screenshots && project.screenshots.length > 0 && !project.screenshots[0].startsWith('http')}
 				<section class="mt-16">
-					<h2 class="mb-8 text-2xl font-bold text-white">App Screenshots</h2>
+					<h2 class="mb-8 font-display text-2xl font-bold text-white">App Screenshots</h2>
 					<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
 						{#each project.screenshots as screenshot, i}
 							<button
 								type="button"
 								on:click={() => openLightbox(i)}
-								class="group relative overflow-hidden rounded-2xl bg-gray-800/50 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 cursor-pointer border-0"
+								class="group relative overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer border-0"
+								style="background: rgba(255,255,255,0.02); box-shadow: 0 0 0 1px rgba(255,255,255,0.05);"
 							>
 								<img
 									src={getImageUrl(screenshot)}
@@ -230,7 +242,7 @@
 								/>
 								<!-- Hover overlay -->
 								<div class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-									<svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<svg class="h-10 w-10 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
 									</svg>
 								</div>
@@ -253,14 +265,14 @@
 		aria-modal="true"
 		tabindex="-1"
 	>
-		<!-- Backdrop with blur -->
-		<div class="absolute inset-0 bg-black/20 backdrop-blur-xl"></div>
+		<!-- Backdrop -->
+		<div class="absolute inset-0 bg-black/60 backdrop-blur-2xl"></div>
 		
 		<!-- Close button -->
 		<button
 			type="button"
 			on:click={closeLightbox}
-			class="glass-panel absolute top-6 right-6 z-10 rounded-full p-3 text-white transition-all hover:scale-110"
+			class="glass-panel absolute top-6 right-6 z-10 rounded-full p-3 text-white/70 transition-all hover:scale-110 hover:text-white"
 		>
 			<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -268,7 +280,7 @@
 		</button>
 		
 		<!-- Image counter -->
-		<div class="glass-panel absolute top-6 left-6 z-10 rounded-full px-4 py-2 text-sm font-medium text-white">
+		<div class="glass-panel absolute top-6 left-6 z-10 rounded-full px-4 py-2 text-sm font-medium text-white/60 font-display">
 			{lightboxIndex + 1} / {project.screenshots.length}
 		</div>
 		
@@ -277,7 +289,7 @@
 			<button
 				type="button"
 				on:click|stopPropagation={prevImage}
-				class="glass-panel absolute left-4 z-10 rounded-full p-4 text-white transition-all hover:scale-110 md:left-8"
+				class="glass-panel absolute left-4 z-10 rounded-full p-4 text-white/70 transition-all hover:scale-110 hover:text-white md:left-8"
 			>
 				<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -290,7 +302,7 @@
 			<button
 				type="button"
 				on:click|stopPropagation={nextImage}
-				class="glass-panel absolute right-4 z-10 rounded-full p-4 text-white transition-all hover:scale-110 md:right-8"
+				class="glass-panel absolute right-4 z-10 rounded-full p-4 text-white/70 transition-all hover:scale-110 hover:text-white md:right-8"
 			>
 				<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
