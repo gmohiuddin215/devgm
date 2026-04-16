@@ -11,7 +11,7 @@
   import { experience, socialLinks } from '$lib/data';
 
   const techPills = [
-    "Python", "PyTorch", "LangChain", "Swift", "SwiftUI",
+    "Python", "LangChain", "Swift", "SwiftUI",
     "FastAPI", "React/Next.js", "Docker", "RAG", "LLMs"
   ];
 
@@ -27,6 +27,8 @@
     { name: "GitHub", handle: "@gmohiuddin215", href: socialLinks.github },
     { name: "LinkedIn", handle: "/in/mohiuddin2398", href: socialLinks.linkedin },
     { name: "Upwork", handle: "Ghulam M.", href: socialLinks.upwork },
+	{ name: "Fiverr", handle: "Ghulam M.", href: socialLinks.fiverr },
+	{ name: "Contra", handle: "Ghulam M.", href: socialLinks.contra },
   ];
 
   const floatingBadges = [
@@ -90,7 +92,7 @@
       >
         Most of my work is building intelligent systems and production iOS apps.
         I specialize in bringing AI capabilities into native mobile applications 
-        using Python, PyTorch, LangChain, Swift, and SwiftUI. I build full-stack
+        using Python, LangChain, Swift, and SwiftUI. I build full-stack
         solutions, from vector databases to clean mobile architectures.
       </p>
 
@@ -143,11 +145,11 @@
           class="font-display font-bold text-text leading-[1.1] tracking-[-0.03em]"
           style="font-size: clamp(40px, 4.5vw, 64px);"
         >
-          Turning ideas into <span class="italic text-peach font-light">reliable</span> software.
+          Building <span class="italic text-peach font-light">ai powered</span> software.
         </h2>
         <p class="font-body text-[15px] font-light text-subtext0 leading-[1.85]">
           I'm an AI Engineer and iOS Developer who thrives at the intersection of
-          machine learning and native mobile experiences. I've spent years building
+          artificial intelligence and native mobile experiences. I've spent years building
           scalable intelligent architectures and high-performance SwiftUI interfaces.
           From RAG pipelines in Python to SceneKit rendering, I care about pushing
           boundaries.

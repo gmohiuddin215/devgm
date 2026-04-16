@@ -1,16 +1,16 @@
 # Ghulam Mohiuddin - AI Engineer & Senior iOS Developer
 
-> AI Engineer & Senior iOS Developer with 4+ years of experience building intelligent systems, production iOS apps, and full-stack solutions with Python, PyTorch, LangChain, Swift & SwiftUI.
+> AI Engineer & Senior iOS Developer with 4+ years of experience building intelligent systems, production iOS apps, and full-stack solutions with Python, LangChain, Swift & SwiftUI.
 
 ## About
-Ghulam Mohiuddin is an AI Engineer & Senior iOS Developer based in Lahore, Pakistan, currently working at iParagons Tech. He is pivoting from iOS engineering to AI engineering, bringing deep mobile expertise to the world of intelligent systems. He specializes in Python, PyTorch, TensorFlow, LangChain, RAG pipelines, LLMs, as well as Swift, SwiftUI, and modern iOS frameworks including SceneKit, RealityKit, and In-App Purchases. He has extensive experience building full-stack solutions with FastAPI, Supabase, and Firebase.
+Ghulam Mohiuddin is an AI Engineer & Senior iOS Developer based in Lahore, Pakistan, currently working at iParagons Tech. He is pivoting from iOS engineering to AI engineering, bringing deep mobile expertise to the world of intelligent systems. He specializes in Python, TensorFlow, LangChain, RAG pipelines, LLMs, as well as Swift, SwiftUI, and modern iOS frameworks including SceneKit, RealityKit, and In-App Purchases. He has extensive experience building full-stack solutions with FastAPI, Supabase, and Firebase.
 
 ## Skills
-Python, PyTorch, TensorFlow, LangChain, RAG, LLMs, Prompt Engineering, Hugging Face, Vector Databases, Swift, SwiftUI, Objective-C, UIKit, Combine, CoreData, SwiftData, ARKit, RealityKit, SceneKit, CoreML, WidgetKit, In-App Purchases, REST APIs, FastAPI, Firebase, Supabase, Docker, PostgreSQL, Git, Xcode, MVVM, Clean Architecture
+Python, TensorFlow, LangChain, RAG, LLMs, Prompt Engineering, Hugging Face, Vector Databases, Swift, SwiftUI, Objective-C, UIKit, Combine, CoreData, SwiftData, ARKit, RealityKit, SceneKit, CoreML, WidgetKit, In-App Purchases, REST APIs, FastAPI, Firebase, Supabase, Docker, PostgreSQL, Git, Xcode, MVVM, Clean Architecture
 
 ## Experience
 - **AI Engineer & Senior iOS Developer** at iParagons Tech (2021 - Present)
-  - Building intelligent systems with Python, PyTorch, LangChain, and RAG pipelines
+  - Building intelligent systems with Python, LangChain, and RAG pipelines
   - Expert in Swift, SwiftUI, Combine, SceneKit, RealityKit, SiriKit, WidgetKit
   - Built production apps with In-App Purchases, backend integrations, and AI features
 

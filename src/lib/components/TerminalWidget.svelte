@@ -8,7 +8,7 @@
     { type: "kv", key: '"name"', value: '"Ghulam Mohiuddin"' },
     { type: "kv", key: '"role"', value: '"AI Engineer & iOS Dev"' },
     { type: "kv", key: '"location"', value: '"Lahore, Pakistan"' },
-    { type: "array", key: '"stack"', value: '["Python", "Swift", "PyTorch"]' },
+    { type: "array", key: '"stack"', value: '["Python", "Swift"]' },
     { type: "kv", key: '"open_to"', value: '"Freelance & contracts"' },
     { type: "kv", key: '"status"', value: '"building..."' },
     { type: "brace", content: "}" },

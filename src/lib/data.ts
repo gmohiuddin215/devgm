@@ -13,7 +13,7 @@ export const experience = [
         company: 'iParagons Tech',
         duration: '2021 - Present',
         description: 'Building intelligent systems and production iOS apps. Expert in AI/ML integration, LLMs, RAG pipelines, Swift, SwiftUI, and full-stack development with Python & FastAPI.',
-        technologies: ['Python', 'PyTorch', 'LangChain', 'Swift', 'SwiftUI', 'FastAPI']
+        technologies: ['Swift', 'SwiftUI', 'Python', 'LangChain', 'FastAPI']
     }
 ];
 
@@ -21,7 +21,7 @@ export const skillCategories = [
     {
         category: 'AI & Machine Learning',
         icon: '🧠',
-        skills: ['Python', 'PyTorch', 'TensorFlow', 'LangChain', 'RAG', 'LLMs', 'Prompt Engineering', 'Hugging Face', 'Vector DBs']
+        skills: ['Python', 'TensorFlow', 'LangChain', 'RAG', 'LLMs', 'Prompt Engineering', 'Hugging Face', 'Vector DBs']
     },
     {
         category: 'iOS & Mobile',
@@ -38,7 +38,6 @@ export const skillCategories = [
 // Keep flat skills for backward compat
 export const skills = [
     { name: 'Python & AI/ML', level: 'Expert' },
-    { name: 'PyTorch & TensorFlow', level: 'Expert' },
     { name: 'LangChain & RAG', level: 'Expert' },
     { name: 'LLMs & Prompt Engineering', level: 'Expert' },
     { name: 'Swift & SwiftUI', level: 'Expert' },

@@ -1,11 +1,11 @@
 <script lang="ts">
   const items = [
     "AI Engineering",
-    "Machine Learning",
     "iOS Development",
-    "SwiftUI & Combine",
-    "Python & FastAPI",
-    "PyTorch",
+    "Swift",
+    "SwiftUI",
+    "Python",
+    "FastAPI",
     "LangChain",
     "RAG & LLMs",
     "Clean Architecture",
