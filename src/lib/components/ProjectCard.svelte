@@ -18,7 +18,7 @@
   ></div>
 
   <div
-    class="absolute bottom-0 left-0 h-[2px] bg-peach transition-all duration-500"
+    class="absolute bottom-0 left-0 h-[2px] bg-green transition-all duration-500"
     style="width: {hovered ? '100%' : '0%'}; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);"
   ></div>
 
@@ -47,7 +47,7 @@
     </div>
 
     <span
-      class="text-peach text-lg inline-block transition-all duration-300"
+      class="text-green text-lg inline-block transition-all duration-300"
       style="opacity: {hovered ? 1 : 0}; transform: {hovered ? 'translate(0, 0)' : 'translate(-8px, 8px)'};"
     >
       ↗

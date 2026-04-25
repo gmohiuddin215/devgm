@@ -109,6 +109,7 @@
     let t = 0;
 
     function draw() {
+      if (!ctx) return;
       t++;
       ctx.clearRect(0, 0, W, H);
 

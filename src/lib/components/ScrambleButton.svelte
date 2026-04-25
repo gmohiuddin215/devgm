@@ -48,15 +48,15 @@
     "group relative inline-flex items-center gap-3 overflow-hidden",
     "font-mono text-[11px] uppercase tracking-[0.14em]",
     "px-7 py-3.5",
-    variant === "primary" ? "border border-peach" : "border border-surface1",
+    variant === "primary" ? "border border-green" : "border border-surface1",
     "transition-colors duration-500",
-    variant === "primary" ? "hover:border-surface1" : "hover:border-peach",
+    variant === "primary" ? "hover:border-surface1" : "hover:border-green",
   ].join(" "));
 </script>
 
 {#snippet inner()}
   <span
-    class="absolute inset-0 bg-peach transition-transform duration-500"
+    class="absolute inset-0 bg-green transition-transform duration-500"
     style="transform: {fillVisible ? 'scaleX(1)' : 'scaleX(0)'}; transform-origin: {variant === 'primary' ? (fillVisible ? 'left' : 'right') : 'left'}; transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);"
   ></span>
   <span

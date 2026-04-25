@@ -75,7 +75,7 @@
   style="background-color: rgba(30, 30, 46, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(205, 214, 244, 0.06);"
 >
   <a href="/" class="font-display text-[22px] font-bold tracking-tight text-text">
-  GM<span class="text-peach">.</span>
+  GM<span class="text-green">.</span>
   </a>
 
   <div class="hidden md:flex items-center gap-8">
@@ -87,7 +87,7 @@
       >
         <span class="group-hover:text-text transition-colors duration-250 {isActive(link.href) ? 'text-text' : ''}">{link.label}</span>
         <span
-          class="absolute left-0 bottom-[-4px] h-px bg-peach transition-all duration-300 ease-out {isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'}"
+          class="absolute left-0 bottom-[-4px] h-px bg-green transition-all duration-300 ease-out {isActive(link.href) ? 'w-full' : 'w-0 group-hover:w-full'}"
         ></span>
       </a>
     {/each}
@@ -119,14 +119,14 @@
       <a
         href={link.href}
         onclick={closeMobile}
-        class="font-display text-2xl font-medium text-text hover:text-peach transition-colors duration-250"
+        class="font-display text-2xl font-medium text-text hover:text-green transition-colors duration-250"
       >
         {link.label}
       </a>
     {/each}
     <a
       href={`mailto:${CONTACT_EMAIL}`}
-      class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.14em] px-7 py-3.5 border border-peach text-peach"
+      class="mt-4 inline-block font-mono text-[11px] uppercase tracking-[0.14em] px-7 py-3.5 border border-green text-green"
     >
       Let's talk
     </a>
@@ -137,7 +137,7 @@
   <div class="fixed left-0 right-0 top-[69px] z-[200] h-[2px] bg-surface0/60 overflow-hidden">
     <div
       class="h-full rounded-r-full"
-      style="width: {scrollProgress.toFixed(1)}%; background: linear-gradient(90deg, var(--peach), var(--mauve), var(--blue), var(--teal)); transition: width 220ms cubic-bezier(0.23, 1, 0.32, 1);"
+      style="width: {scrollProgress.toFixed(1)}%; background: linear-gradient(90deg, var(--green), var(--mauve), var(--blue), var(--teal)); transition: width 220ms cubic-bezier(0.23, 1, 0.32, 1);"
     ></div>
   </div>
 {/if}

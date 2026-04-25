@@ -11,11 +11,11 @@
   <div class="max-w-[1200px] mx-auto px-6 lg:px-14 py-8">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4">
       <span class="font-display text-[20px] font-bold tracking-tight text-text">
-        GM<span class="text-peach">.</span>
+        GM<span class="text-green">.</span>
       </span>
 
       <p class="font-display text-[16px] italic font-light text-subtext0 text-center">
-        Designed & built by Ghulam Mohiuddin <span class="text-peach mx-2">✦</span>
+        Designed & built by Ghulam Mohiuddin <span class="text-green mx-2">✦</span>
       </p>
 
       <span class="font-mono text-[11px] tracking-widest text-overlay0">
@@ -32,7 +32,7 @@
           {#if i > 0}<span class="text-overlay0 text-[11px]">·</span>{/if}
           <a
             href={link.href}
-            class="font-mono text-[11px] text-overlay0 hover:text-peach transition-colors duration-250"
+            class="font-mono text-[11px] text-overlay0 hover:text-green transition-colors duration-250"
           >
             {link.label}
           </a>

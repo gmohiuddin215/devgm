@@ -49,10 +49,10 @@
         class="flex items-center gap-2"
       >
         <span
-          class="w-2 h-2 rounded-full bg-peach inline-block"
+          class="w-2 h-2 rounded-full bg-green inline-block"
           style="animation: pulse-glow 2s ease-in-out infinite;"
         ></span>
-        <span class="font-mono text-[11px] text-peach tracking-[0.2em] uppercase">
+        <span class="font-mono text-[11px] text-green tracking-[0.2em] uppercase">
           Available for opportunities, {new Date().getFullYear()}
         </span>
       </div>
@@ -70,7 +70,7 @@
         <div class="overflow-hidden">
           <h1
             in:fly={{ y: "100%", duration: 700, delay: 200, easing: quartOut }}
-            class="font-display font-light italic text-peach leading-[0.88] tracking-[-0.04em]"
+            class="font-display font-light italic text-green leading-[0.88] tracking-[-0.04em]"
             style="font-size: clamp(72px, 8vw, 120px);"
           >
             Mohiuddin.
@@ -138,14 +138,14 @@
   <div class="max-w-[1200px] mx-auto px-6 lg:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
     <ScrollReveal>
       <div class="flex flex-col gap-6">
-        <span class="font-mono text-[13px] text-peach tracking-[0.12em]">
+        <span class="font-mono text-[13px] text-green tracking-[0.12em]">
           // About me
         </span>
         <h2
           class="font-display font-bold text-text leading-[1.1] tracking-[-0.03em]"
           style="font-size: clamp(40px, 4.5vw, 64px);"
         >
-          Building <span class="italic text-peach font-light">ai powered</span> software.
+          Building <span class="italic text-green font-light">ai powered</span> software.
         </h2>
         <p class="font-body text-[15px] font-light text-subtext0 leading-[1.85]">
           I'm an AI Engineer and iOS Developer who thrives at the intersection of
@@ -163,7 +163,7 @@
 
         <div class="flex flex-wrap gap-2 mt-2">
           {#each techPills as pill}
-            <span class="pill font-mono text-[11px] text-subtext1 border border-surface1 rounded-full px-3 py-1.5 transition-all duration-300 hover:border-peach hover:text-peach hover:bg-[rgba(250,179,135,0.06)]">
+            <span class="pill font-mono text-[11px] text-subtext1 border border-surface1 rounded-full px-3 py-1.5 transition-all duration-300 hover:border-green hover:text-green hover:bg-[rgba(250,179,135,0.06)]">
               {pill}
             </span>
           {/each}
@@ -181,14 +181,14 @@
 <section id="experience" class="py-[110px]">
   <div class="max-w-[1200px] mx-auto px-6 lg:px-14">
     <ScrollReveal>
-      <span class="font-mono text-[13px] text-peach tracking-[0.12em] block mb-4">
+      <span class="font-mono text-[13px] text-green tracking-[0.12em] block mb-4">
         // Experience
       </span>
       <h2
         class="font-display font-bold text-text leading-[1.1] tracking-[-0.03em] mb-12"
         style="font-size: clamp(40px, 4.5vw, 64px);"
       >
-        Where I've <span class="italic text-peach font-light">worked.</span>
+        Where I've <span class="italic text-green font-light">worked.</span>
       </h2>
     </ScrollReveal>
 
@@ -210,7 +210,7 @@
               >
                 {exp.role}
               </h3>
-              <span class="font-body text-[12px] uppercase tracking-[0.08em] text-peach">
+              <span class="font-body text-[12px] uppercase tracking-[0.08em] text-green">
                 {exp.company}
               </span>
               <p class="font-body text-[14px] font-light text-subtext0 mt-1 leading-[1.75]">
@@ -219,7 +219,7 @@
             </div>
 
             <div class="flex items-start justify-end">
-              <span class="font-mono text-[10px] text-peach bg-[rgba(250,179,135,0.1)] px-3 py-1 rounded-full">
+              <span class="font-mono text-[10px] text-green bg-[rgba(250,179,135,0.1)] px-3 py-1 rounded-full">
                 {exp.badge}
               </span>
             </div>
@@ -235,14 +235,14 @@
   <div class="max-w-[1200px] mx-auto px-6 lg:px-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[100px]">
     <ScrollReveal>
       <div class="flex flex-col gap-6">
-        <span class="font-mono text-[13px] text-peach tracking-[0.12em]">
+        <span class="font-mono text-[13px] text-green tracking-[0.12em]">
           // Contact
         </span>
         <h2
           class="font-display font-bold text-text leading-[1.1] tracking-[-0.03em]"
           style="font-size: clamp(40px, 4.5vw, 64px);"
         >
-          Let's build something <span class="italic text-peach font-light">great.</span>
+          Let's build something <span class="italic text-green font-light">great.</span>
         </h2>
         <p class="font-body text-[15px] font-light text-subtext0 leading-[1.85]">
           I'm always open to interesting conversations, new opportunities,
@@ -251,7 +251,7 @@
         </p>
         <a
           href={`mailto:${CONTACT_EMAIL}`}
-          class="font-display text-peach italic font-light text-[clamp(20px,2.5vw,32px)] border-b border-peach/30 hover:border-peach pb-1 transition-all duration-300 inline-block mt-2 w-fit"
+          class="font-display text-green italic font-light text-[clamp(20px,2.5vw,32px)] border-b border-green/30 hover:border-green pb-1 transition-all duration-300 inline-block mt-2 w-fit"
         >
           {DISPLAY_EMAIL}
         </a>
@@ -269,14 +269,14 @@
             style={i < socials.length - 1 ? "border-bottom: 1px solid rgba(205, 214, 244, 0.07);" : ""}
           >
             <div class="flex flex-col gap-0.5">
-              <span class="font-body text-[18px] font-medium text-text group-hover:text-peach transition-colors duration-250">
+              <span class="font-body text-[18px] font-medium text-text group-hover:text-green transition-colors duration-250">
                 {social.name}
               </span>
               <span class="font-mono text-[11px] text-overlay0">
                 {social.handle}
               </span>
             </div>
-            <span class="text-peach opacity-0 translate-y-2 -translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-300">
+            <span class="text-green opacity-0 translate-y-2 -translate-x-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-300">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
             </span>
           </a>

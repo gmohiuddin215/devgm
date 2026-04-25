@@ -18,7 +18,7 @@
   --lavender: #b4befe;
   --blue: #89b4fa;
   --teal: #94e2d5;
-  --green: #a6e3a1;
+  --green: #25D366;
   --yellow: #f9e2af;
   --red: #f38ba8;
   --pink: #f5c2e7;
@@ -91,7 +91,7 @@ body {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--peach);
+  background: var(--green);
 }
 
 @supports (scrollbar-color: auto) {
@@ -131,7 +131,7 @@ body {
 
 @utility pill {
   & {
-    @apply font-mono text-[11px] text-subtext1 border border-surface1 rounded-full px-3 py-1.5 transition-all duration-300 hover:border-peach hover:text-peach;
+    @apply font-mono text-[11px] text-subtext1 border border-surface1 rounded-full px-3 py-1.5 transition-all duration-300 hover:border-green hover:text-green;
   }
   &:hover {
     background-color: rgba(250, 179, 135, 0.06);

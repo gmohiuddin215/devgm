@@ -52,14 +52,14 @@
             <span style="color: var(--subtext0)">{line.content}</span>
           {:else if line.type === "kv"}
             <span class="pl-4">
-              <span style="color: var(--peach)">{line.key}</span>
+              <span style="color: var(--green)">{line.key}</span>
               <span style="color: var(--subtext0)">: </span>
               <span style="color: var(--yellow)">{line.value}</span>
               <span style="color: var(--subtext0)">,</span>
             </span>
           {:else if line.type === "array"}
             <span class="pl-4">
-              <span style="color: var(--peach)">{line.key}</span>
+              <span style="color: var(--green)">{line.key}</span>
               <span style="color: var(--subtext0)">: </span>
               <span style="color: var(--lavender)">{line.value}</span>
               <span style="color: var(--subtext0)">,</span>

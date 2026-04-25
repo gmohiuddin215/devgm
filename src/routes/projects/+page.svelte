@@ -13,7 +13,7 @@
   <section class="py-[110px]">
     <div class="max-w-[1200px] mx-auto px-6 lg:px-14">
       <ScrollReveal>
-        <span class="font-mono text-[13px] text-peach tracking-[0.12em] block mb-4">
+        <span class="font-mono text-[13px] text-green tracking-[0.12em] block mb-4">
           // Work
         </span>
         <h1
@@ -22,7 +22,7 @@
         >
           Projects
         </h1>
-        <p class="font-display font-light italic text-peach text-[clamp(18px,2vw,26px)] mt-3 mb-4">
+        <p class="font-display font-light italic text-green text-[clamp(18px,2vw,26px)] mt-3 mb-4">
           Things I've shipped.
         </p>
         <p class="font-body text-[15px] font-light text-subtext0 leading-[1.85] max-w-[560px] mb-12">
