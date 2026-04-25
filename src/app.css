@@ -61,19 +61,17 @@ html {
 }
 
 body {
-  background-color: var(--base);
+  background-color: #04040f;
   color: var(--text);
   font-family: var(--font-body), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: none;
 }
 
 @media (pointer: fine) {
-  body {
-    cursor: none;
-  }
-  a, button {
-    cursor: none;
+  *, *::before, *::after, a, button {
+    cursor: none !important;
   }
 }
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import '../app.css';
   import Cursor from '$lib/components/Cursor.svelte';
+  import SpaceBackground from '$lib/components/SpaceBackground.svelte';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import { page } from '$app/stores';
@@ -20,6 +21,7 @@
   <meta name="author" content="Ghulam Mohiuddin" />
 </svelte:head>
 
+<SpaceBackground />
 <Cursor />
 <Navbar />
 <main>{@render children?.()}</main>
