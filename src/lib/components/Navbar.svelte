@@ -9,7 +9,7 @@
     { href: "/#experience", label: "Experience" },
     { href: "/#contact", label: "Contact" },
     { href: "/projects", label: "Projects" },
-    // { href: "/blog", label: "Blog" },
+    { href: "/blog", label: "Blog" },
   ];
 
   let pathname = $derived($page.url.pathname);

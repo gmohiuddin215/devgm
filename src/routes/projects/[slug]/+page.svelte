@@ -1,5 +1,15 @@
-<script>
-	export let data;
+<script lang="ts">
+	type Project = {
+		slug: string;
+		title: string;
+		description: string;
+		detailedDescription: string;
+		technologies: string[];
+		screenshots: string[];
+		appStoreUrl?: string;
+	};
+
+	export let data: { project: Project };
 	const { project } = data;
 	let currentScreenshotIndex = 0;
 	
@@ -8,9 +18,9 @@
 	let lightboxIndex = 0;
 
 	// Dynamically import images from assets folder
-	const imageModules = import.meta.glob('$lib/assets/**/*.PNG', { eager: true });
+	const imageModules = import.meta.glob<{ default: string }>('$lib/assets/**/*.PNG', { eager: true });
 	
-	function getImageUrl(screenshotPath) {
+	function getImageUrl(screenshotPath: string) {
 		// Check if it's a full URL (placeholder or external)
 		if (screenshotPath.startsWith('http')) {
 			return screenshotPath;
@@ -22,7 +32,7 @@
 	}
 	
 	// Lightbox functions
-	function openLightbox(index) {
+	function openLightbox(index: number) {
 		lightboxIndex = index;
 		lightboxOpen = true;
 		document.body.style.overflow = 'hidden';
@@ -45,7 +55,7 @@
 		}
 	}
 	
-	function handleKeydown(event) {
+	function handleKeydown(event: KeyboardEvent) {
 		if (!lightboxOpen) return;
 		
 		if (event.key === 'Escape') {
@@ -106,7 +116,7 @@
 			"price": "0",
 			"priceCurrency": "USD"
 		},
-		...(project.appStoreLink ? { "downloadUrl": project.appStoreLink } : {})
+		...(project.appStoreUrl ? { "downloadUrl": project.appStoreUrl } : {})
 	})}</script>`}
 	
 	<!-- JSON-LD: BreadcrumbList -->
