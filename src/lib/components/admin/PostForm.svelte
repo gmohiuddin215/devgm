@@ -1,14 +1,16 @@
 <script lang="ts">
 	import { CalendarClock, Eye, FileText, Link, Save, Tags } from 'lucide-svelte';
 	import HugeRTEEditor from './HugeRTEEditor.svelte';
-	import type { BlogPost } from '$lib/server/supabase';
+	import type { BlogPost, BlogPostInput } from '$lib/server/supabase';
+
+	type PostFormData = Partial<BlogPost> & Partial<BlogPostInput>;
 
 	let {
 		post = null,
 		errors = {},
 		submitLabel = 'Save post'
 	}: {
-		post?: BlogPost | null;
+		post?: PostFormData | null;
 		errors?: Record<string, string>;
 		submitLabel?: string;
 	} = $props();
@@ -17,11 +19,13 @@
 	let title = $state(post?.title ?? '');
 	let slug = $state(post?.slug ?? '');
 	let status = $state(post?.status ?? 'draft');
+	let excerpt = $state(post?.excerpt ?? '');
+	let tags = $state(post?.tags?.join(', ') ?? '');
+	let coverImage = $state(post?.cover_image ?? '');
 
 	const publishedAt = post?.published_at
 		? new Date(post.published_at).toISOString().slice(0, 16)
 		: '';
-	const tags = post?.tags?.join(', ') ?? '';
 
 	function syncSlug() {
 		if (slug) return;
@@ -60,9 +64,10 @@
 				id="excerpt"
 				name="excerpt"
 				rows="3"
+				bind:value={excerpt}
 				class="mt-3 w-full resize-none rounded-md border border-surface0 bg-base/80 px-4 py-3 text-[15px] leading-7 text-text outline-none transition placeholder:text-overlay0 focus:border-green"
 				placeholder="A sharp, useful summary for the blog index and SEO."
-			>{post?.excerpt ?? ''}</textarea>
+			></textarea>
 			{#if errors.excerpt}<p class="mt-2 text-sm text-red">{errors.excerpt}</p>{/if}
 		</div>
 
@@ -133,7 +138,7 @@
 			<input
 				id="tags"
 				name="tags"
-				value={tags}
+				bind:value={tags}
 				class="mt-3 w-full rounded-md border border-surface0 bg-base px-3 py-2 text-text outline-none focus:border-green"
 				placeholder="SvelteKit, Supabase, AI"
 			/>
@@ -160,7 +165,7 @@
 			<input
 				id="cover_image"
 				name="cover_image"
-				value={post?.cover_image ?? ''}
+				bind:value={coverImage}
 				class="mt-3 w-full rounded-md border border-surface0 bg-base px-3 py-2 text-text outline-none focus:border-green"
 				placeholder="https://..."
 			/>

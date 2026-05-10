@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { onDestroy, onMount } from 'svelte';
 	import 'hugerte/skins/ui/oxide-dark/skin.css';
 	import 'hugerte/skins/ui/oxide-dark/content.css';
@@ -92,6 +93,7 @@
 	];
 
 	function getHugeRTE() {
+		if (!browser) return undefined;
 		return (window as unknown as { hugerte?: HugeRTE }).hugerte;
 	}
 
@@ -247,6 +249,7 @@
 	});
 
 	onDestroy(() => {
+		if (!browser) return;
 		if (editor) {
 			value = editor.getContent();
 		}

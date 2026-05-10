@@ -16,14 +16,15 @@ export const actions: Actions = {
 		const errors = validatePostInput(input);
 
 		if (Object.keys(errors).length > 0) {
-			return fail(400, { errors });
+			return fail(400, { errors, values: input });
 		}
 
 		try {
-			const post = await createPost(accessToken, input);
-			redirect(303, `/admin/posts/${post.id}/edit`);
+			await createPost(accessToken, input);
+			redirect(303, '/admin');
 		} catch (error) {
 			return fail(400, {
+				values: input,
 				errors: {
 					form: error instanceof Error ? error.message : 'Unable to create post.'
 				}

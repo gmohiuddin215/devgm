@@ -24,7 +24,7 @@
 					</p>
 				{/if}
 			</div>
-			<PostForm errors={form?.errors ?? {}} submitLabel="Create post" />
+			<PostForm post={form?.values ?? null} errors={form?.errors ?? {}} submitLabel="Create post" />
 		</div>
 	</section>
 </div>
