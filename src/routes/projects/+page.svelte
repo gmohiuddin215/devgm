@@ -1,12 +1,37 @@
 <script lang="ts">
   import ScrollReveal from '$lib/components/ScrollReveal.svelte';
   import ProjectCard from '$lib/components/ProjectCard.svelte';
+  import { SITE_URL } from '$lib/constants';
   import { projects } from '$lib/data';
+
+  const pageTitle = 'Projects | Ghulam Mohiuddin';
+  const pageDescription =
+    "A curated list of projects I've built, spanning applied AI, iOS apps, and full-stack solutions.";
+  const pageUrl = `${SITE_URL}/projects`;
+  const ogImage = `${SITE_URL}/og-image.png`;
 </script>
 
 <svelte:head>
-  <title>Projects | Ghulam Mohiuddin</title>
-  <meta name="description" content="A curated list of projects I've built, spanning applied AI, iOS apps, and full-stack solutions." />
+  <title>{pageTitle}</title>
+  <meta name="title" content={pageTitle} />
+  <meta name="description" content={pageDescription} />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={pageUrl} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={pageUrl} />
+  <meta property="og:title" content={pageTitle} />
+  <meta property="og:description" content={pageDescription} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Ghulam Mohiuddin" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content={pageUrl} />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={pageDescription} />
+  <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
 <div class="pt-[70px]">

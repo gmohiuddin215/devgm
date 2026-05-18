@@ -6,7 +6,7 @@ Disallow:
 Allow: /
 
 # Sitemap
-Sitemap: https://devgm.vercel.app/sitemap.xml
+Sitemap: https://ghulammohiuddin.com/sitemap.xml
 
 # AI Bots - explicitly allow
 User-agent: GPTBot

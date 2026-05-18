@@ -6,7 +6,7 @@
   import TerminalWidget from '$lib/components/TerminalWidget.svelte';
   import ScrollReveal from '$lib/components/ScrollReveal.svelte';
   import ScrambleButton from '$lib/components/ScrambleButton.svelte';
-  import { CONTACT_EMAIL, DISPLAY_EMAIL } from '$lib/constants';
+  import { CONTACT_EMAIL, DISPLAY_EMAIL, SITE_URL } from '$lib/constants';
 
   import { experience, socialLinks } from '$lib/data';
 
@@ -37,7 +37,37 @@
     { label: "Location", value: "Lahore, Pakistan", bottom: "32%", left: "6%", delay: 2.1 },
     { label: "Available", value: "Freelance", bottom: "8%", right: "24%", delay: 0.6 },
   ];
+
+  const siteTitle = "Ghulam Mohiuddin | AI Engineer & iOS Developer";
+  const siteDescription =
+    "AI Engineer & Senior iOS Developer building intelligent systems, production iOS apps, and full-stack solutions.";
+  const ogImage = `${SITE_URL}/og-image.png`;
 </script>
+
+<svelte:head>
+  <title>{siteTitle} — Building Intelligent Systems</title>
+  <meta name="title" content="{siteTitle} — Building Intelligent Systems" />
+  <meta name="description" content={siteDescription} />
+  <meta name="keywords" content="AI Engineer, Machine Learning Engineer, iOS Developer, Python Developer" />
+  <meta name="author" content="Ghulam Mohiuddin" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="{SITE_URL}/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{SITE_URL}/" />
+  <meta property="og:title" content={siteTitle} />
+  <meta property="og:description" content={siteDescription} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Ghulam Mohiuddin" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="{SITE_URL}/" />
+  <meta name="twitter:title" content={siteTitle} />
+  <meta name="twitter:description" content={siteDescription} />
+  <meta name="twitter:image" content={ogImage} />
+</svelte:head>
 
 <!-- HERO -->
 <section class="relative min-h-screen flex items-center pt-[70px]">

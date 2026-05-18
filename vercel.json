@@ -1,0 +1,15 @@
+{
+	"redirects": [
+		{
+			"source": "/(.*)",
+			"has": [
+				{
+					"type": "host",
+					"value": "devgm.vercel.app"
+				}
+			],
+			"destination": "https://ghulammohiuddin.com/$1",
+			"permanent": true
+		}
+	]
+}

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { page } from '$app/stores';
   import ScrambleButton from './ScrambleButton.svelte';
   import { CONTACT_EMAIL } from '$lib/constants';
@@ -9,58 +8,10 @@
     { href: "/#experience", label: "Experience" },
     { href: "/#contact", label: "Contact" },
     { href: "/projects", label: "Projects" },
-    { href: "/blog", label: "Blog" },
   ];
 
   let pathname = $derived($page.url.pathname);
   let mobileOpen = $state(false);
-  
-  let isBlogRoute = $derived(pathname.startsWith("/blog"));
-  let scrollProgress = $state(0);
-  let targetRef = 0;
-
-  onMount(() => {
-    let rafId: number | null = null;
-
-    const computeTarget = () => {
-      const doc = document.documentElement;
-      const scrollTop = window.scrollY || doc.scrollTop;
-      const height = doc.scrollHeight - doc.clientHeight;
-      if (height <= 0) return 0;
-      return Math.min(100, Math.max(0, (scrollTop / height) * 100));
-    };
-
-    const handleScroll = () => {
-      if (isBlogRoute) {
-        targetRef = computeTarget();
-      }
-    };
-
-    const animate = () => {
-      if (isBlogRoute) {
-        const diff = targetRef - scrollProgress;
-        if (Math.abs(diff) >= 0.1) {
-          scrollProgress += diff * 0.15;
-        } else {
-          scrollProgress = targetRef;
-        }
-      } else {
-        scrollProgress = 0;
-        targetRef = 0;
-      }
-      rafId = requestAnimationFrame(animate);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    window.addEventListener("resize", handleScroll);
-    rafId = requestAnimationFrame(animate);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleScroll);
-      if (rafId !== null) cancelAnimationFrame(rafId);
-    };
-  });
 
   function isActive(href: string) {
     if (href.startsWith("/#")) return pathname === "/";
@@ -130,14 +81,5 @@
     >
       Let's talk
     </a>
-  </div>
-{/if}
-
-{#if isBlogRoute}
-  <div class="fixed left-0 right-0 top-[69px] z-[200] h-[2px] bg-surface0/60 overflow-hidden">
-    <div
-      class="h-full rounded-r-full"
-      style="width: {scrollProgress.toFixed(1)}%; background: linear-gradient(90deg, var(--green), var(--mauve), var(--blue), var(--teal)); transition: width 220ms cubic-bezier(0.23, 1, 0.32, 1);"
-    ></div>
   </div>
 {/if}

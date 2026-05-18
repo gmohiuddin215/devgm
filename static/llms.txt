@@ -59,7 +59,7 @@ Technologies: Swift, SwiftUI, REST APIs, Gemini, Firebase, MVVM, NodeJS
 - Fiverr: https://www.fiverr.com/s/DBkkdrP
 - Upwork: https://www.upwork.com/freelancers/~016d7a9c811354e794
 - Contra: https://contra.com/ghulam_mohiuddin_xop0t6wa
-- Portfolio: https://devgm.vercel.app
+- Portfolio: https://ghulammohiuddin.com
 
 ## Availability
 Currently available for AI engineering projects, iOS development, and full-stack freelance work. Open to contract and full-time opportunities in AI/ML and mobile development.

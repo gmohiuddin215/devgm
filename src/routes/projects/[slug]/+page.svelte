@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { SITE_URL } from '$lib/constants';
+
 	type Project = {
 		slug: string;
 		title: string;
@@ -11,6 +13,8 @@
 
 	export let data: { project: Project };
 	const { project } = data;
+	const projectUrl = `${SITE_URL}/projects/${project.slug}`;
+	const ogImage = `${SITE_URL}/og-image.png`;
 	let currentScreenshotIndex = 0;
 	
 	// Lightbox state
@@ -78,24 +82,24 @@
 	<meta name="keywords" content="{project.title}, {project.technologies.join(', ')}, iOS App, Swift App, SwiftUI App, Ghulam Mohiuddin, Mobile App, App Store, Case Study, AI Engineer" />
 	<meta name="author" content="Ghulam Mohiuddin" />
 	<meta name="robots" content="index, follow" />
-	<link rel="canonical" href="https://devgm.vercel.app/projects/{project.slug}" />
+	<link rel="canonical" href={projectUrl} />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="article" />
-	<meta property="og:url" content="https://devgm.vercel.app/projects/{project.slug}" />
+	<meta property="og:url" content={projectUrl} />
 	<meta property="og:title" content="{project.title} — Case Study by Ghulam Mohiuddin" />
 	<meta property="og:description" content={project.description} />
-	<meta property="og:image" content="https://devgm.vercel.app/og-image.png" />
+	<meta property="og:image" content={ogImage} />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta property="og:site_name" content="Ghulam Mohiuddin — Portfolio" />
 	
 	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://devgm.vercel.app/projects/{project.slug}" />
-	<meta property="twitter:title" content="{project.title} — Case Study by Ghulam Mohiuddin" />
-	<meta property="twitter:description" content={project.description} />
-	<meta property="twitter:image" content="https://devgm.vercel.app/og-image.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content={projectUrl} />
+	<meta name="twitter:title" content="{project.title} — Case Study by Ghulam Mohiuddin" />
+	<meta name="twitter:description" content={project.description} />
+	<meta name="twitter:image" content={ogImage} />
 	
 	<!-- JSON-LD: SoftwareApplication Schema -->
 	{@html `<script type="application/ld+json">${JSON.stringify({
@@ -103,13 +107,13 @@
 		"@type": "SoftwareApplication",
 		"name": project.title,
 		"description": project.description,
-		"url": `https://devgm.vercel.app/projects/${project.slug}`,
+		"url": projectUrl,
 		"applicationCategory": "MobileApplication",
 		"operatingSystem": "iOS",
 		"author": {
 			"@type": "Person",
 			"name": "Ghulam Mohiuddin",
-			"url": "https://devgm.vercel.app"
+			"url": SITE_URL
 		},
 		"offers": {
 			"@type": "Offer",
@@ -128,19 +132,19 @@
 				"@type": "ListItem",
 				"position": 1,
 				"name": "Home",
-				"item": "https://devgm.vercel.app"
+				"item": SITE_URL
 			},
 			{
 				"@type": "ListItem",
 				"position": 2,
 				"name": "Projects",
-				"item": "https://devgm.vercel.app/#projects"
+				"item": `${SITE_URL}/projects`
 			},
 			{
 				"@type": "ListItem",
 				"position": 3,
 				"name": project.title,
-				"item": `https://devgm.vercel.app/projects/${project.slug}`
+				"item": projectUrl
 			}
 		]
 	})}</script>`}
